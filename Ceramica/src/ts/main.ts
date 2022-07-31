@@ -2,18 +2,19 @@ class Slider {
   index: number;
   sliders: NodeListOf<Element>;
   dots: NodeListOf<Element>;
+
   constructor(sliderSeparator: string, sliderDots: string) {
     this.index = 0;
     this.sliders = document.querySelectorAll(sliderSeparator);
     this.dots = document.querySelectorAll(sliderDots);
   }
 
-  currentSlide(ind: number) {
+  currentSlide(ind: number): void {
     this.activeSlide(ind);
     this.activeDot(ind);
   }
 
-  eventHandlerDot(event: Event, separator: string) {
+  eventHandlerDot(event: Event, separator: string): void {
     const { target } = event;
     if ((target as HTMLElement).classList.contains(separator)) {
       for (let i: number = 0; i < this.dots.length; i++) {
@@ -25,17 +26,17 @@ class Slider {
     }
   }
 
-  activeSlide(ind: number) {
+  activeSlide(ind: number): void {
     this.sliders.forEach(slide => slide.classList.remove('active'));
     this.sliders[ind].classList.add('active');
   }
 
-  activeDot(ind: number) {
+  activeDot(ind: number): void {
     this.dots.forEach(dot => dot.classList.remove('active'));
     this.dots[ind].classList.add('active');
   }
 
-  nextSlide() {
+  nextSlide(): void {
     this.index++;
     if (this.index === this.sliders.length) {
       this.index = 0;
@@ -43,7 +44,7 @@ class Slider {
     this.currentSlide(this.index);
   }
 
-  prevSlide() {
+  prevSlide(): void {
     this.index--;
     if (this.index < 0) {
       this.index = this.sliders.length - 1;
@@ -61,11 +62,11 @@ const underheadMouse = document.querySelector('.underheader__navigation-mouse');
 underheadNext.addEventListener('click', underheadSlider.nextSlide.bind(underheadSlider), true);
 underheadPrev.addEventListener('click', underheadSlider.prevSlide.bind(underheadSlider), true);
 
-dots.addEventListener('click', function () {
+dots.addEventListener('click', function (): void {
   return underheadSlider.eventHandlerDot.call(underheadSlider, event, 'underheader__navigation-dot');
 }, true)
 
-underheadMouse.addEventListener('click', function () {
+underheadMouse.addEventListener('click', function (): void {
   let height: number = document.documentElement.clientHeight;
   let dropDown = setInterval(() => {
     window.scrollBy(0, 10);
