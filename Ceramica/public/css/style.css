@@ -125,6 +125,28 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+}
+
+.catchword {
+  font-family: "Gotham Pro";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.212;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-transform: uppercase;
+  color: #40474E;
+}
+
+.catchword::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #8D9AA5;
+  top: 10px;
+  margin-left: 24px;
 }
 
 .header {
@@ -471,6 +493,33 @@ body {
   width: 1.5px;
   height: 34px;
   background-color: #FFFFFF;
+}
+
+.projects {
+  padding: 120px 0;
+  position: relative;
+}
+
+.projects__header {
+  margin-bottom: 80px;
+}
+
+.projects__slider-main {
+  position: relative;
+}
+
+.projects__slider-glass {
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  background-color: rgba(249, 249, 250, 0.2);
+  left: 189px;
+  bottom: 212px;
+}
+
+.projects__slider-glass > svg {
+  margin: 27px;
+  fill: #F9F9FA;
 }
 
 .footer {

@@ -1,0 +1,82 @@
+.projects {
+  padding: 120px 0;
+  position: relative;
+
+  // .projects__header
+
+  &__header {
+    margin-bottom: 80px;
+  }
+
+  // // .projects__slider
+
+  // &__slider {}
+
+  // // .projects__slider-item
+
+  // &__slider-item {}
+
+  // // .projects__slider-main
+
+  &__slider-main {
+    position: relative;
+  }
+
+  // // .projects__slider-img
+
+  // &__slider-img {}
+
+  &__slider-glass{
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    background-color: rgba($color: $color-dots, $alpha: 0.2);
+    left: 189px;
+    bottom: 212px;
+    >svg {
+      margin: 27px;
+      fill: $color-dots;
+    }
+  }
+
+  // // .projects__slider-description
+
+  // &__slider-description {}
+
+  // // .projects__slider-header
+
+  // &__slider-header {}
+
+  // // .projects__slider-text
+
+  // &__slider-text {}
+
+  // // .projects__control
+
+  // &__control {}
+
+  // // .projects__control-list
+
+  // &__control-list {}
+
+  // // .projects__control-link
+
+  // &__control-link {}
+
+  // // .projects__control-arrows
+
+  // &__control-arrows {}
+
+  // // .projects__control-left
+
+  // &__control-left {}
+
+  // // .projects__control-right
+
+  // &__control-right {}
+
+  // // .projects__carousel
+
+  // &__carousel {}
+}
+

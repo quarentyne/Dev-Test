@@ -26,4 +26,24 @@ body{
   max-width: 1500px;
   margin:  0 auto;
   padding: 0 15px;
+  position: relative;
+}
+
+.catchword{
+  font-family: 'Gotham Pro';
+  font-weight: normal;
+  @include font(20px, 24.24px);
+  letter-spacing: 0.1em;
+  position: relative;
+  text-transform: uppercase;
+  color: $color-text-base;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #8D9AA5;
+    top: 10px;
+    margin-left: 24px;
+  }
 }
