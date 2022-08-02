@@ -9,11 +9,11 @@ class Slider {
         this.activeDot(ind);
     }
     eventHandlerDot(event, separator) {
-        const { target } = event;
-        if (target.classList.contains(separator)) {
+        if (event.target.classList.contains(separator)) {
             for (let i = 0; i < this.dots.length; i++) {
-                if (this.dots[i] === target) {
+                if (this.dots[i] === event.target) {
                     this.currentSlide(i);
+                    this.index = i;
                     return;
                 }
             }

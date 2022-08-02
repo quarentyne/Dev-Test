@@ -15,11 +15,11 @@ class Slider {
   }
 
   eventHandlerDot(event: Event, separator: string): void {
-    const { target } = event;
-    if ((target as HTMLElement).classList.contains(separator)) {
+    if ((event.target as HTMLElement).classList.contains(separator)) {
       for (let i: number = 0; i < this.dots.length; i++) {
-        if (this.dots[i] === target) {
+        if (this.dots[i] === event.target) {
           this.currentSlide(i);
+          this.index = i;
           return;
         }
       }
