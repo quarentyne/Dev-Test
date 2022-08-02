@@ -21,6 +21,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 const ttf2woff2 = require('gulp-ttf2woff2');
+const minify = require('gulp-minify');
 
 
 // Server
@@ -69,13 +70,14 @@ const scss = () => {
     .pipe(rename({ suffix: '.min' }))
     .pipe(dest('./public/css'))
     .pipe(browserSync.stream());
-}
+};
 
 const typescript = () => {
   return tsProject.src()
     .pipe(tsProject()).js
+    .pipe(minify())
     .pipe(dest('./public/js'))
-}
+};
 
 const img = () => {
   return src('./src/img/**/*.{jpg,jpeg,svg,png,gif}')
@@ -83,22 +85,22 @@ const img = () => {
       verbose: true
     }))
     .pipe(dest('./public/img'))
-}
+};
 
 const icons = () => {
   return src('./src/icons/**/*.{jpg,jpeg,svg,png,gif}')
     .pipe(dest('./public/icons'))
-}
+};
 
 const font = () => {
   return src('./src/fonts/**/*.{ttf,otf,eot,otc,ttc,woff,svg}')
     .pipe(ttf2woff2({ ignoreExt: true }))
     .pipe(dest('./public/fonts'));
-}
+};
 
 const clear = () => {
   return del('./public')
-}
+};
 
 // Watcher
 
@@ -120,4 +122,4 @@ exports.dev = series(
   clear,
   parallel(html, scss, typescript, img, font, icons),
   parallel(watcher, server)
-)
+);

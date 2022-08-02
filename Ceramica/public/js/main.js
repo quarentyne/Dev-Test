@@ -1,14 +1,26 @@
 class Slider {
-    constructor(sliderSeparator, sliderDots) {
+    constructor(props) {
         this.index = 0;
-        this.sliders = document.querySelectorAll(sliderSeparator);
-        this.dots = document.querySelectorAll(sliderDots);
+        this.sliders = document.querySelectorAll(props.sliderSeparator);
+        if (!this.sliders) {
+            throw new Error('Sliders weren\'t found');
+        }
+        this.isDots = props.dots;
+        if (this.isDots) {
+            this.dots = document.querySelectorAll(props.sliderDots);
+            if (!this.dots) {
+                throw new Error('Dots weren\'t found');
+            }
+        }
     }
     currentSlide(ind) {
         this.activeSlide(ind);
-        this.activeDot(ind);
+        if (this.isDots) {
+            this.activeDot(ind);
+        }
     }
     eventHandlerDot(event, separator) {
+        event.preventDefault();
         if (event.target.classList.contains(separator)) {
             for (let i = 0; i < this.dots.length; i++) {
                 if (this.dots[i] === event.target) {
@@ -44,12 +56,16 @@ class Slider {
 }
 const underheadPrev = document.querySelector('#underheader__prev');
 const underheadNext = document.querySelector('#underheader__next');
-const dots = document.querySelector('.underheader__navigation-dots');
-const underheadSlider = new Slider('.underheader__slider-item', '.underheader__navigation-dot');
+const underheadDots = document.querySelector('.underheader__navigation-dots');
 const underheadMouse = document.querySelector('.underheader__navigation-mouse');
+const underheadSlider = new Slider({
+    sliderSeparator: '.underheader__slider-item',
+    dots: true,
+    sliderDots: '.underheader__navigation-dot'
+});
 underheadNext.addEventListener('click', underheadSlider.nextSlide.bind(underheadSlider), true);
 underheadPrev.addEventListener('click', underheadSlider.prevSlide.bind(underheadSlider), true);
-dots.addEventListener('click', function () {
+underheadDots.addEventListener('click', function () {
     return underheadSlider.eventHandlerDot.call(underheadSlider, event, 'underheader__navigation-dot');
 }, true);
 underheadMouse.addEventListener('click', function () {

@@ -1,20 +1,41 @@
+interface ISliderProps {
+  sliderSeparator: string;
+  dots: boolean;
+  sliderDots?: string;
+}
+
 class Slider {
   index: number;
   sliders: NodeListOf<Element>;
   dots: NodeListOf<Element>;
+  isDots: boolean;
 
-  constructor(sliderSeparator: string, sliderDots: string) {
+  constructor(props: ISliderProps) {
     this.index = 0;
-    this.sliders = document.querySelectorAll(sliderSeparator);
-    this.dots = document.querySelectorAll(sliderDots);
+    this.sliders = document.querySelectorAll(props.sliderSeparator);
+
+    if (!this.sliders) {
+      throw new Error('Sliders weren\'t found');
+    }
+
+    this.isDots = props.dots;
+    if (this.isDots) {
+      this.dots = document.querySelectorAll(props.sliderDots);      
+      if (!this.dots) {
+        throw new Error('Dots weren\'t found');
+      }
+    }
   }
 
   currentSlide(ind: number): void {
     this.activeSlide(ind);
-    this.activeDot(ind);
+    if (this.isDots) {
+      this.activeDot(ind);     
+    }    
   }
 
   eventHandlerDot(event: Event, separator: string): void {
+    event.preventDefault();
     if ((event.target as HTMLElement).classList.contains(separator)) {
       for (let i: number = 0; i < this.dots.length; i++) {
         if (this.dots[i] === event.target) {
@@ -55,14 +76,19 @@ class Slider {
 
 const underheadPrev = document.querySelector('#underheader__prev');
 const underheadNext = document.querySelector('#underheader__next');
-const dots = document.querySelector('.underheader__navigation-dots');
-const underheadSlider: Slider = new Slider('.underheader__slider-item', '.underheader__navigation-dot');
+const underheadDots = document.querySelector('.underheader__navigation-dots');
 const underheadMouse = document.querySelector('.underheader__navigation-mouse');
+
+const underheadSlider: Slider = new Slider({
+  sliderSeparator: '.underheader__slider-item',
+  dots: true,
+  sliderDots: '.underheader__navigation-dot'
+});
 
 underheadNext.addEventListener('click', underheadSlider.nextSlide.bind(underheadSlider), true);
 underheadPrev.addEventListener('click', underheadSlider.prevSlide.bind(underheadSlider), true);
 
-dots.addEventListener('click', function (): void {
+underheadDots.addEventListener('click', function (): void {
   return underheadSlider.eventHandlerDot.call(underheadSlider, event, 'underheader__navigation-dot');
 }, true)
 
