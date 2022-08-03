@@ -78,3 +78,11 @@ underheadMouse.addEventListener('click', function () {
         }
     }, 0);
 });
+const projectsPrev = document.querySelector('#projects__prev');
+const projectsNext = document.querySelector('#projects__next');
+const projectsSlider = new Slider({
+    sliderSeparator: '.projects__slider-item',
+    dots: false,
+});
+projectsPrev.addEventListener('click', projectsSlider.prevSlide.bind(projectsSlider), true);
+projectsNext.addEventListener('click', projectsSlider.nextSlide.bind(projectsSlider), true);

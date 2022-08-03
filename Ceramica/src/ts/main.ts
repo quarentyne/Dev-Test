@@ -74,10 +74,10 @@ class Slider {
   }
 }
 
-const underheadPrev = document.querySelector('#underheader__prev');
-const underheadNext = document.querySelector('#underheader__next');
-const underheadDots = document.querySelector('.underheader__navigation-dots');
-const underheadMouse = document.querySelector('.underheader__navigation-mouse');
+const underheadPrev: Element = document.querySelector('#underheader__prev');
+const underheadNext: Element = document.querySelector('#underheader__next');
+const underheadDots: Element = document.querySelector('.underheader__navigation-dots');
+const underheadMouse: Element = document.querySelector('.underheader__navigation-mouse');
 
 const underheadSlider: Slider = new Slider({
   sliderSeparator: '.underheader__slider-item',
@@ -102,3 +102,12 @@ underheadMouse.addEventListener('click', function (): void {
     }
   }, 0);
 });
+
+const projectsPrev: Element = document.querySelector('#projects__prev');
+const projectsNext: Element = document.querySelector('#projects__next');
+const projectsSlider: Slider = new Slider({
+  sliderSeparator: '.projects__slider-item',
+  dots: false,
+})
+projectsPrev.addEventListener('click', projectsSlider.prevSlide.bind(projectsSlider), true);
+projectsNext.addEventListener('click', projectsSlider.nextSlide.bind(projectsSlider), true);

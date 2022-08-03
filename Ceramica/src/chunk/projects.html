@@ -1,12 +1,59 @@
 <section class="projects">
   <h2 class="projects__header catchword container">Наши проекты</h2>
+
   <div class="projects__slider">
-    <div class="projects__slider-item">
+    <div class="container">
+      <div class="projects__control">
+        <button class="projects__control-list">
+          <a href="#" class="projects__control-link">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</a>
+        </button>
+        <div class="projects__control-arrows">
+          <button
+            class="projects__control-left projects__control-arr"
+            id="projects__prev"
+          >
+            <svg
+              width="27"
+              height="8"
+              viewBox="0 0 27 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.72351 0.464562L0.541533 3.64654C0.346272 3.8418 0.346272 4.15839 0.541533 4.35365L3.72351 7.53563C3.91878 7.73089 4.23536 7.73089 4.43062 7.53563C4.62588 7.34037 4.62588 7.02378 4.43062 6.82852L2.10219 4.5001H26.9641V3.5001H2.10219L4.43062 1.17167C4.62588 0.976407 4.62588 0.659824 4.43062 0.464562C4.23536 0.2693 3.91878 0.2693 3.72351 0.464562Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="projects__control-right projects__control-arr"
+            id="projects__next"
+          >
+            <svg
+              width="27"
+              height="8"
+              viewBox="0 0 27 8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.5265 0.464562L26.7085 3.64654C26.9037 3.8418 26.9037 4.15839 26.7085 4.35365L23.5265 7.53563C23.3312 7.73089 23.0146 7.73089 22.8194 7.53563C22.6241 7.34037 22.6241 7.02378 22.8194 6.82852L25.1478 4.5001H0.28595V3.5001H25.1478L22.8194 1.17167C22.6241 0.976407 22.6241 0.659824 22.8194 0.464562C23.0146 0.2693 23.3312 0.2693 23.5265 0.464562Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects__slider-item active">
       <div class="projects__slider-main">
         <img
           src="./img/projects/projects_1.jpg"
           alt="Projects slide"
           class="projects__slider-img"
+          width="1070"
+          height="806"
         />
         <div class="projects__slider-glass">
           <svg
@@ -28,6 +75,7 @@
           </svg>
         </div>
       </div>
+
       <div class="projects__slider-description container">
         <h3 class="projects__slider-header">
           Сеть фитнес-центров Start&Finish
@@ -40,46 +88,24 @@
           </p>
         </div>
       </div>
+
+      <div class="projects__carousel">
+        <img
+          src="./img/projects/projects_2_min.jpg"
+          alt="Projects carousel"
+          class="projects__carousel-item"
+        />
+        <img
+          src="./img/projects/projects_3_min.jpg"
+          alt="Projects carousel"
+          class="projects__carousel-item"
+        />
+        <img
+          src="./img/projects/projects_1_min.jpg"
+          alt="Projects carousel"
+          class="projects__carousel-item"
+        />
+      </div>
     </div>
-  </div>
-  <div class="projects__control">
-    <button class="projects__control-list">
-      <a href="#" class="projects__control-link">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</a>
-    </button>
-    <div class="projects__control-arrows">
-      <button class="projects__control-left">
-        <svg
-          width="27"
-          height="8"
-          viewBox="0 0 27 8"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M3.72351 0.464562L0.541533 3.64654C0.346272 3.8418 0.346272 4.15839 0.541533 4.35365L3.72351 7.53563C3.91878 7.73089 4.23536 7.73089 4.43062 7.53563C4.62588 7.34037 4.62588 7.02378 4.43062 6.82852L2.10219 4.5001H26.9641V3.5001H2.10219L4.43062 1.17167C4.62588 0.976407 4.62588 0.659824 4.43062 0.464562C4.23536 0.2693 3.91878 0.2693 3.72351 0.464562Z"
-          />
-        </svg>
-      </button>
-      <button class="projects__control-right">
-        <svg
-          width="27"
-          height="8"
-          viewBox="0 0 27 8"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M23.5265 0.464562L26.7085 3.64654C26.9037 3.8418 26.9037 4.15839 26.7085 4.35365L23.5265 7.53563C23.3312 7.73089 23.0146 7.73089 22.8194 7.53563C22.6241 7.34037 22.6241 7.02378 22.8194 6.82852L25.1478 4.5001H0.28595V3.5001H25.1478L22.8194 1.17167C22.6241 0.976407 22.6241 0.659824 22.8194 0.464562C23.0146 0.2693 23.3312 0.2693 23.5265 0.464562Z"
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="projects__carousel">
-    <img src="./img/projects/projects_2_min.jpg" alt="Projects carousel" />
-    <img src="./img/projects/projects_3_min.jpg" alt="Projects carousel" />
-    <img src="./img/projects/projects_1_min.jpg" alt="Projects carousel" />
   </div>
 </section>
