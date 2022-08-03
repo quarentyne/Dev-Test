@@ -1,8 +1,8 @@
 .projects {
   padding: 120px 0;
-  // position: relative;
   font-family: 'Gotham Pro';
   font-weight: normal;
+
   // .projects__header
 
   &__header {
@@ -12,7 +12,6 @@
   // // .projects__slider
 
   // &__slider {
-  //   position: relative;
   // }
 
   // // .projects__slider-item
@@ -30,9 +29,6 @@
 
   &__slider-main {
     position: relative;
-    // object-fit: scale-down;
-    // overflow: hidden;
-    // width: 100%;
   }
 
   // // .projects__slider-img
@@ -52,6 +48,7 @@
       margin: 27px;
       fill: $color-dots;
     }
+    cursor: none;
   }
 
   // // .projects__slider-description
@@ -114,7 +111,6 @@
     display: inline-block;
     padding: 18px 45px;
     cursor: pointer;
-    // font-weight: normal;
   }
 
   // // .projects__control-arrows
