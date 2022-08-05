@@ -77,6 +77,14 @@ const typescript = () => {
     .pipe(tsProject()).js
     .pipe(minify())
     .pipe(dest('./public/js'))
+    .pipe(browserSync.stream());
+};
+
+const javascript = () => {
+  return src('./src/js/*.js')
+    .pipe(minify())
+    .pipe(dest('./public/js'))
+    .pipe(browserSync.stream());
 };
 
 const img = () => {
@@ -84,12 +92,12 @@ const img = () => {
     .pipe(imagemin({
       verbose: true
     }))
-    .pipe(dest('./public/img'))
+    .pipe(dest('./public/img'));
 };
 
 const icons = () => {
   return src('./src/icons/**/*.{jpg,jpeg,svg,png,gif}')
-    .pipe(dest('./public/icons'))
+    .pipe(dest('./public/icons'));
 };
 
 const font = () => {
@@ -99,7 +107,7 @@ const font = () => {
 };
 
 const clear = () => {
-  return del('./public')
+  return del('./public');
 };
 
 // Watcher
@@ -111,7 +119,7 @@ const watcher = () => {
   watch('./src/fonts/**/*.{ttf,otf,eot,otc,ttc,woff,svg}', font);
   watch('./src/chunk/**/*.html', html);
   watch('./src/ts/**/*.ts', typescript);
-
+  watch('./src/js/**/*.js', javascript);
 };
 
 // exports.html = html;
@@ -120,6 +128,6 @@ const watcher = () => {
 
 exports.dev = series(
   clear,
-  parallel(html, scss, typescript, img, font, icons),
+  parallel(html, scss, typescript, javascript, img, font, icons),
   parallel(watcher, server)
 );
