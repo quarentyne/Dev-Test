@@ -24,5 +24,66 @@ const projectElements = new Swiper(".project-slider", {
   thumbs: {
     swiper: project,
   },
+  on: {
+    slideChange: function () {
+      const parent = document.querySelector('.project-slider');
+      setTimeout(magnyfying.bind(magnyfying, parent, 2), 0);
+    },
+    init: function () {
+      const parent = document.querySelector('.project-slider');
+      setTimeout(magnyfying.bind(magnyfying, parent, 2), 0);
+    }
+  }
 });
 
+
+function magnyfying(parentElement, zoom) {
+  const slide = parentElement.querySelector('.swiper-slide-active');
+
+  const image = slide.querySelector('.project-slider__img-big');
+  const glass = slide.querySelector('.glass');
+
+  const width = glass.offsetWidth / 2;
+  const height = glass.offsetHeight / 2;
+
+  glass.addEventListener('mousemove', moveGlass);
+
+  function moveGlass(event) {
+    event.preventDefault();
+
+    glass.style.backgroundImage = "url('" + image.src + "')";
+    glass.style.backgroundRepeat = "no-repeat";
+    glass.style.backgroundSize = (image.width * zoom) + "px " + (image.height * zoom) + "px";
+
+    let position = getCursorPosition(event);
+    let positionX = position.x;
+    let positionY = position.y;
+
+    if (positionX > image.width - (width / zoom)) {
+      positionX = image.width - (width / zoom);
+    }
+    if (positionX < width / zoom) {
+      positionX = width / zoom;
+    }
+    if (positionY > image.height - (height / zoom)) {
+      positionY = image.height - (height / zoom);
+    }
+    if (positionY < height / zoom) {
+      positionY = height / zoom;
+    }
+    glass.style.left = (positionX - width) + "px";
+    glass.style.top = (positionY - height) + "px";
+    glass.style.backgroundPosition = "-" + ((positionX * zoom) - width) + "px -" + ((positionY * zoom) - height) + "px";
+
+  }
+
+  function getCursorPosition(event) {
+    const imageSize = image.getBoundingClientRect();
+    let coordX = event.pageX - imageSize.left;
+    let coordY = event.pageY - imageSize.top;
+
+    coordX = coordX - window.pageXOffset;
+    coordY = coordY - window.pageYOffset;
+    return { x: coordX, y: coordY }
+  }
+}

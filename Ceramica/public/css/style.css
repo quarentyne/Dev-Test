@@ -488,15 +488,18 @@ body {
 
 .swiper-slide__glass {
   position: absolute;
+  left: 189px;
+  bottom: 212px;
+}
+
+.glass {
   width: 119px;
   height: 119px;
   background-color: rgba(249, 249, 250, 0.2);
-  left: 189px;
-  bottom: 212px;
   cursor: none;
 }
 
-.swiper-slide__glass > svg {
+.glass__magnify {
   margin: 27px;
   fill: #F9F9FA;
 }
@@ -511,6 +514,104 @@ body {
 .project-carousel__image {
   width: 327px;
   height: 245px;
+}
+
+.projects {
+  position: relative;
+  padding: 120px 0;
+  font-family: "Gotham Pro";
+  font-weight: normal;
+}
+
+.projects__wrapper {
+  position: relative;
+}
+
+.projects__arrow {
+  background-color: transparent;
+  border: 1px solid #98A4AE;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+
+.projects__arrow:hover > svg {
+  fill: #AA182C;
+}
+
+.projects__arrow > svg {
+  fill: #40474E;
+}
+
+.cathword {
+  margin-bottom: 80px;
+}
+
+.cathword__text {
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  line-height: 1.212;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.cathword__text::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: #8D9AA5;
+  margin-left: 24px;
+  top: 50%;
+}
+
+.full-slider__content {
+  max-width: 540px;
+}
+
+.sense__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.sense__header {
+  font-size: 44px;
+  line-height: 1.3;
+  font-weight: normal;
+  color: #40474E;
+  margin-bottom: 40px;
+}
+
+.sense__text {
+  max-width: 460px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #40474E;
+  font-weight: 300;
+}
+
+.sense__text > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 1.1571428571;
+  padding: 18px 45px;
+  color: #6B97BB;
+  border: 1px solid #6B97BB;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer {

@@ -12,18 +12,21 @@
 
 .swiper-slide {
   &__glass{
-    position: absolute;
-    width: 119px;
-    height: 119px;
-    background-color: rgba(249, 249, 250, 0.2);
+    position: absolute;    
     left: 189px;
     bottom: 212px;
-    cursor: none;
-    >svg {
-      margin: 27px;
-      fill: #F9F9FA;
-    }
   }  
+}
+
+.glass{
+  width: 119px;
+  height: 119px;
+  background-color: rgba(249, 249, 250, 0.2);
+  cursor: none;
+  &__magnify{
+    margin: 27px;
+    fill: #F9F9FA;
+  }
 }
 
 .project-carousel {

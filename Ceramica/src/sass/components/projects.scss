@@ -1,3 +1,150 @@
+.projects {
+  position: relative;
+  padding: 120px 0;
+  font-family: 'Gotham Pro';
+  font-weight: normal;
+  &__wrapper{
+    position: relative;
+  }
+//   // .projects__inner
+
+  // &__inner {
+  //   display: flex;
+  // }
+  &__arrow{
+    background-color: transparent;
+    border: 1px solid #98A4AE;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    &:hover>svg{
+      fill: $color-focus-red;
+    }
+    >svg{
+      fill: $color-text-base;
+    }
+  }
+}
+
+.cathword {
+  margin-bottom: 80px;
+  &__text {
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    @include font(20px, 24.24px);
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      width: 200px;
+      height: 1px;
+      background-color: #8D9AA5;
+      margin-left: 24px;
+      top: 50%;
+    }
+  }
+}
+
+// .container {}
+
+.full-slider {
+//   // .full-slider__content
+
+  &__content {
+    max-width: 540px;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
+    // z-index: 10;
+  }
+
+//   // .full-slider__nav
+
+//   &__nav {}
+
+//   // .full-slider__prev
+
+//   &__prev {}
+
+//   // .full-slider__next
+
+//   &__next {}
+}
+
+// .swiper-no-swiping {}
+
+.sense {
+  
+  // margin: 0 0 0 auto;
+  
+  // z-index: 100;
+
+  // .description__navigation
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+  }
+
+  // // .description__all
+
+  // &__all {}
+
+  // // .description__nav
+
+  // &__nav {}
+
+  // // .description__arrow
+
+  // &__arrow {
+  //   padding: 18px 45px;
+  //   color: $color-button-active;
+  //   border: 1px solid $color-button-active;
+  //   background-color: transparent;
+  //   text-transform: uppercase;
+  // }
+
+  // // .description__inner
+
+  // &__inner {}
+
+  // // .description__header
+
+  &__header {
+    @include font(44px, 57.2px);
+    font-weight: normal;
+    color:$color-text-base;
+    margin-bottom: 40px;
+  }
+
+  // // .description__text
+
+  &__text {
+    max-width: 460px;
+    @include font(18px, 25.2px);
+    color: $color-text-base;
+    font-weight: 300;
+    >p:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.btn {
+  @include font(14px, 16.2px);
+  padding: 18px 45px;
+  color: $color-button-active;
+  border: 1px solid $color-button-active;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+
 // .projects {
 //   padding: 120px 0;
 //   font-family: 'Gotham Pro';
