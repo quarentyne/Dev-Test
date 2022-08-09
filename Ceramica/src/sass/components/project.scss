@@ -1,0 +1,39 @@
+.project-slider {
+  &__img-big {
+    width: 1070px;
+    height: 806px;
+  }
+}
+
+.carousel-wrapper{
+  margin-left: 51%;
+  position: relative;
+}
+
+.swiper-slide {
+  &__glass{
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    background-color: rgba(249, 249, 250, 0.2);
+    left: 189px;
+    bottom: 212px;
+    cursor: none;
+    >svg {
+      margin: 27px;
+      fill: #F9F9FA;
+    }
+  }  
+}
+
+.project-carousel {
+  max-width: 1060px;
+  position: absolute;
+  bottom: 60px;
+  overflow: hidden;
+
+  &__image {
+    width: 327px;
+    height: 245px;
+  }
+}

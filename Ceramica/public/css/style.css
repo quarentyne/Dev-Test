@@ -476,6 +476,43 @@ body {
   background-color: transparent;
 }
 
+.project-slider__img-big {
+  width: 1070px;
+  height: 806px;
+}
+
+.carousel-wrapper {
+  margin-left: 51%;
+  position: relative;
+}
+
+.swiper-slide__glass {
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  background-color: rgba(249, 249, 250, 0.2);
+  left: 189px;
+  bottom: 212px;
+  cursor: none;
+}
+
+.swiper-slide__glass > svg {
+  margin: 27px;
+  fill: #F9F9FA;
+}
+
+.project-carousel {
+  max-width: 1060px;
+  position: absolute;
+  bottom: 60px;
+  overflow: hidden;
+}
+
+.project-carousel__image {
+  width: 327px;
+  height: 245px;
+}
+
 .footer {
   background-color: #6A737A;
   padding-top: 80px;
