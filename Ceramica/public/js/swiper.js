@@ -14,6 +14,15 @@ const uderheaderSwiper = new Swiper('.underheader-slider', {
   },
 });
 
+const projectsSlider = new Swiper('.projects__slider', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.full-slider__next',
+    prevEl: '.full-slider__prev',
+    enabled: false,
+  },
+})
+
 const project = new Swiper(".project-carousel", {
   spaceBetween: 40,
   slidesPerView: 3,
@@ -21,6 +30,8 @@ const project = new Swiper(".project-carousel", {
   loop: true,
 });
 const projectElements = new Swiper(".project-slider", {
+  spaceBetween: 1940,
+
   thumbs: {
     swiper: project,
   },

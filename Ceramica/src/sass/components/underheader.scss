@@ -23,8 +23,8 @@
   &__image {
     position: relative;
     >img{
-      object-fit: cover
-    };
+      object-fit: cover;
+    }
     &::after {
       content: '';
       position: absolute;

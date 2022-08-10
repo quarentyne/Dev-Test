@@ -1,12 +1,15 @@
 .project-slider {
+  max-width: 1070px;
+
   &__img-big {
     width: 1070px;
     height: 806px;
+    object-fit: cover;
   }
 }
 
 .carousel-wrapper{
-  margin-left: 51%;
+  margin-left: 90%;
   position: relative;
 }
 

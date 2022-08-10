@@ -3,14 +3,20 @@
   padding: 120px 0;
   font-family: 'Gotham Pro';
   font-weight: normal;
+
+
+
   &__wrapper{
     position: relative;
   }
 //   // .projects__inner
 
-  // &__inner {
-  //   display: flex;
-  // }
+  &__inner {
+    // min-width: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
   &__arrow{
     background-color: transparent;
     border: 1px solid #98A4AE;
@@ -52,7 +58,10 @@
 //   // .full-slider__content
 
   &__content {
-    max-width: 540px;
+    // max-width: 540px;
+    width: 540px;
+    margin-left: 85px;
+    // flex-shrink: 2;
     // position: absolute;
     // right: 0;
     // top: 0;
@@ -70,6 +79,10 @@
 //   // .full-slider__next
 
 //   &__next {}
+  &__project{
+    min-width: 0;
+    // max-width: 1400px;
+  }
 }
 
 // .swiper-no-swiping {}
