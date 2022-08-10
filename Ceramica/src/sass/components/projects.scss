@@ -52,49 +52,18 @@
   }
 }
 
-// .container {}
 
 .full-slider {
-//   // .full-slider__content
-
   &__content {
-    // max-width: 540px;
     width: 540px;
     margin-left: 85px;
-    // flex-shrink: 2;
-    // position: absolute;
-    // right: 0;
-    // top: 0;
-    // z-index: 10;
   }
-
-//   // .full-slider__nav
-
-//   &__nav {}
-
-//   // .full-slider__prev
-
-//   &__prev {}
-
-//   // .full-slider__next
-
-//   &__next {}
   &__project{
     min-width: 0;
-    // max-width: 1400px;
   }
 }
 
-// .swiper-no-swiping {}
-
 .sense {
-  
-  // margin: 0 0 0 auto;
-  
-  // z-index: 100;
-
-  // .description__navigation
-
   &__navigation {
     display: flex;
     justify-content: space-between;
@@ -102,38 +71,12 @@
     margin-bottom: 85px;
   }
 
-  // // .description__all
-
-  // &__all {}
-
-  // // .description__nav
-
-  // &__nav {}
-
-  // // .description__arrow
-
-  // &__arrow {
-  //   padding: 18px 45px;
-  //   color: $color-button-active;
-  //   border: 1px solid $color-button-active;
-  //   background-color: transparent;
-  //   text-transform: uppercase;
-  // }
-
-  // // .description__inner
-
-  // &__inner {}
-
-  // // .description__header
-
   &__header {
     @include font(44px, 57.2px);
     font-weight: normal;
     color:$color-text-base;
     margin-bottom: 40px;
   }
-
-  // // .description__text
 
   &__text {
     max-width: 460px;
@@ -155,174 +98,3 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-
-
-
-// .projects {
-//   padding: 120px 0;
-//   font-family: 'Gotham Pro';
-//   font-weight: normal;
-
-//   // .projects__header
-
-//   &__header {
-//     margin-bottom: 80px;
-//   }
-
-//   // // .projects__slider
-
-//   // &__slider {
-//   // }
-
-//   // // .projects__slider-item
-
-//   &__slider-item {
-//     position: relative;
-//     display: none;
-
-//     &.active {
-//       display: flex;
-//     }
-
-//     animation: vision 0.5s forwards;
-//   }
-
-//   // // .projects__slider-main
-
-//   &__slider-main {
-//     position: relative;
-//   }
-
-//   // // .projects__slider-img
-
-//   &__slider-img {
-//     object-fit: none;
-//   }
-
-//   &__slider-glass {
-//     position: absolute;
-//     width: 119px;
-//     height: 119px;
-//     background-color: rgba($color: $color-dots, $alpha: 0.2);
-//     left: 189px;
-//     bottom: 212px;
-
-//     >svg {
-//       margin: 27px;
-//       fill: $color-dots;
-//     }
-
-//     cursor: none;
-//   }
-
-//   // // .projects__slider-description
-
-//   &__slider-description {
-//     max-width: 550px;
-//     color: $color-text-base;
-//     padding: 0;
-//     margin-left: 84px;
-//     margin-top: 140px;
-//   }
-
-//   // // .projects__slider-header
-
-//   &__slider-header {
-//     @include font(44px, 57.2px);
-//     margin-bottom: 40px;
-
-//   }
-
-//   // // .projects__slider-text
-
-//   &__slider-text {
-//     max-width: 460px;
-//     font-weight: 300;
-//     @include font(18px, 25.2px);
-
-//     >p:not(:last-child) {
-//       margin-bottom: 10px;
-//     }
-//   }
-
-//   // // .projects__control
-
-//   &__control {
-//     position: absolute;
-//     right: 0;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     width: 100%;
-//     padding: 0;
-//     z-index: 10;
-//   }
-
-//   // // .projects__control-list
-
-//   &__control-list {
-//     background-color: transparent;
-//     border: 1px solid $color-button-active;
-//     padding: 0;
-//     margin-right: 9%;
-//   }
-
-//   // // .projects__control-link
-
-//   &__control-link {
-//     text-transform: uppercase;
-//     color: $color-button-active;
-//     @include font(14px, 16.2px);
-//     display: inline-block;
-//     padding: 18px 45px;
-//     cursor: pointer;
-//   }
-
-//   // // .projects__control-arrows
-
-//   &__control-arrows {
-//     display: flex;
-//     max-width: 124px;
-//     width: 100%;
-//     justify-content: space-between;
-//   }
-
-//   // // .projects__control-arr
-//   &__control-arr {
-//     display: inline-block;
-//     fill: $color-text-base;
-//     background-color: transparent;
-//     border: 1px solid #98A4AE;
-//     width: 54px;
-//     height: 54px;
-//     cursor: pointer;
-//   }
-
-//   &__control-left {
-//     &:hover {
-//       fill: $color-focus-red;
-//     }
-//   }
-
-//   // // .projects__control-right
-
-//   &__control-right {
-//     &:hover {
-//       fill: $color-focus-red;
-//     }
-//   }
-
-//   // // .projects__carousel
-
-//   &__carousel {
-//     position: absolute;
-//     display: flex;
-//     bottom: 7%;
-//     left: 51.5%;
-//   }
-
-//   &__carousel-item {
-//     margin-right: 40px;
-//     cursor: pointer;
-//   }
-// }
