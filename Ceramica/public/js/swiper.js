@@ -23,17 +23,18 @@ const projectsSlider = new Swiper('.projects__slider', {
   },
 })
 
-const project = new Swiper(".project-carousel", {
+const projectCarousel = new Swiper(".project-carousel", {
   spaceBetween: 40,
   slidesPerView: 3,
   watchSlidesProgress: true,
   loop: true,
 });
+
 const projectElements = new Swiper(".project-slider", {
   spaceBetween: 1940,
 
   thumbs: {
-    swiper: project,
+    swiper: projectCarousel,
   },
   on: {
     slideChange: function () {
@@ -45,6 +46,13 @@ const projectElements = new Swiper(".project-slider", {
       setTimeout(magnyfying.bind(magnyfying, parent, 2), 0);
     }
   }
+});
+
+const blogCarousel = new Swiper('.blog__carousel', {
+  spaceBetween: 10,
+  slidesPerView: 4.2,
+  watchSlidesProgress: true,
+  loop: true,
 });
 
 

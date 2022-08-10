@@ -9,10 +9,8 @@
   &__wrapper{
     position: relative;
   }
-//   // .projects__inner
 
   &__inner {
-    // min-width: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
@@ -34,6 +32,8 @@
 
 .cathword {
   margin-bottom: 80px;
+  font-family: 'Gotham Pro';
+  color: $color-text-base;
   &__text {
     font-weight: normal;
     letter-spacing: 0.1em;
@@ -91,6 +91,7 @@
 
 .btn {
   @include font(14px, 16.2px);
+  font-family: 'Gotham Pro';
   padding: 18px 45px;
   color: $color-button-active;
   border: 1px solid $color-button-active;

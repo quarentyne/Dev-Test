@@ -1,0 +1,150 @@
+.blog {
+  padding: 120px 0;
+  background-color: $color-dots;
+
+  // .blog__cathword
+
+  &__cathword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .blog__btn
+
+  &__btn {
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+
+  // .blog__carousel
+
+  &__carousel {
+    overflow: hidden;
+    max-width: 1695px;
+    margin-left: auto;
+  }
+
+  // .blog__card
+
+  // &__card {}
+}
+
+// .container {}
+
+// .cathword {
+
+//   // .cathword__text
+
+//   &__text {}
+// }
+
+// .btn {}
+
+// .swiper-wrapper {}
+
+// .swiper-slide {}
+
+.card {
+  font-family: 'Gotham Pro';
+  font-weight: normal;
+  color: $color-text-base;
+  border: 1px solid #CFDAE3;
+  position: relative;
+//   // .card__img
+
+  // &__img {}
+
+//   // .card__description
+
+  &__description {
+    max-width: 340px;
+    margin: 20px auto 15px auto;
+  }
+
+//   // .card__meta
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+//   // .card__type
+
+  &__type {
+    @include font(14px, 18.2px);
+    padding: 4px 10px;
+  }
+
+//   // .card__type-news
+
+  &__type-news {
+    background-color: #CFDAE3;
+  }
+
+  &__type-article {
+    background-color: #D9D4D4;
+  }
+
+//   // .card__date
+
+  &__date {
+    @include font(14px, 18.2px);
+  }
+
+//   // .card__text
+
+  &__link {
+    color: $color-text-base;
+    @include font(20px, 24px);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+//   // .card__statistic
+
+  &__statistic {
+    display: flex;
+    >span{
+      padding-left: 24px;
+      margin-right: 15px;
+      display: inline-block;
+      color: $color-footer-background;
+      @include font(12px, 15.6px);
+    }
+    margin-bottom: 15px;
+  }
+
+//   // .card__view
+
+  &__view {
+    background: url("../icons/Eye.svg") no-repeat;
+    background-position: left;
+  }
+
+//   // .card__cpmments
+
+  &__comments {
+    background: url("../icons/Comments.svg") no-repeat;
+    background-position: left;
+  }
+
+}
+
+.slide{
+  &__wrapper{
+    border: 1px solid transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      border-color: #CFDAE3;
+    }
+  }
+}

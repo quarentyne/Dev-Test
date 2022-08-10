@@ -564,6 +564,8 @@ body {
 
 .cathword {
   margin-bottom: 80px;
+  font-family: "Gotham Pro";
+  color: #40474E;
 }
 
 .cathword__text {
@@ -630,12 +632,141 @@ body {
 .btn {
   font-size: 14px;
   line-height: 1.1571428571;
+  font-family: "Gotham Pro";
   padding: 18px 45px;
   color: #6B97BB;
   border: 1px solid #6B97BB;
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.blog {
+  padding: 120px 0;
+  background-color: #F9F9FA;
+}
+
+.blog__cathword {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.blog__btn {
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.blog__carousel {
+  overflow: hidden;
+  max-width: 1695px;
+  margin-left: auto;
+}
+
+.card {
+  font-family: "Gotham Pro";
+  font-weight: normal;
+  color: #40474E;
+  border: 1px solid #CFDAE3;
+  position: relative;
+}
+
+.card__description {
+  max-width: 340px;
+  margin: 20px auto 15px auto;
+}
+
+.card__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card__type {
+  font-size: 14px;
+  line-height: 1.3;
+  padding: 4px 10px;
+}
+
+.card__type-news {
+  background-color: #CFDAE3;
+}
+
+.card__type-article {
+  background-color: #D9D4D4;
+}
+
+.card__date {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.card__link {
+  color: #40474E;
+  font-size: 20px;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card__statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.card__statistic > span {
+  padding-left: 24px;
+  margin-right: 15px;
+  display: inline-block;
+  color: #6A737A;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.card__view {
+  background: url("../icons/Eye.svg") no-repeat;
+  background-position: left;
+}
+
+.card__comments {
+  background: url("../icons/Comments.svg") no-repeat;
+  background-position: left;
+}
+
+.slide__wrapper {
+  border: 1px solid transparent;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slide__wrapper:hover {
+  border-color: #CFDAE3;
 }
 
 .footer {
