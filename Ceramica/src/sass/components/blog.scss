@@ -64,6 +64,9 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-bottom: 15px;
+    &:hover{
+      color: $color-button-active;
+    }
   }
 
   &__statistic {

@@ -725,6 +725,10 @@ body {
   margin-bottom: 15px;
 }
 
+.card__link:hover {
+  color: #6B97BB;
+}
+
 .card__statistic {
   display: -webkit-box;
   display: -ms-flexbox;
