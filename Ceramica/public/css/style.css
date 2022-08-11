@@ -139,16 +139,6 @@ body {
   color: #40474E;
 }
 
-.catchword::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  background-color: #8D9AA5;
-  top: 10px;
-  margin-left: 24px;
-}
-
 .header {
   font-family: "Gotham Pro";
   font-weight: normal;
@@ -771,6 +761,99 @@ body {
 
 .slide__wrapper:hover {
   border-color: #CFDAE3;
+}
+
+.instagram {
+  background-color: rgba(207, 218, 227, 0.2);
+  padding: 120px;
+}
+
+.instagram__wrapper {
+  max-width: 910px;
+}
+
+.instagram__catchword {
+  max-width: 858px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.instagram__catchword::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: #8D9AA5;
+  top: 50%;
+  left: 0;
+}
+
+.instagram__tile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.instagram__account {
+  margin-top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-height: 155px;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Gotham Pro";
+  font-weight: normal;
+}
+
+.instagram__logo {
+  width: 50px;
+  height: 50px;
+  background-color: #40474E;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.instagram__link {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #40474E;
+  cursor: default;
+}
+
+.instagram__btn {
+  color: #F9F9FA;
+  font-size: 14px;
+  line-height: 1.1571428571;
+  text-transform: uppercase;
+  padding: 13px 31px;
+  background-color: #6B97BB;
+  border: 1px solid #6B97BB;
+  cursor: pointer;
+}
+
+.instagram__btn > span {
+  font-family: "Gotham Pro";
+}
+
+.tile__element {
+  background-color: #FFFFFF;
 }
 
 .footer {

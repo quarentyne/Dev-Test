@@ -37,13 +37,4 @@ body{
   position: relative;
   text-transform: uppercase;
   color: $color-text-base;
-  &::after{
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 1px;
-    background-color: #8D9AA5;
-    top: 10px;
-    margin-left: 24px;
-  }
 }
