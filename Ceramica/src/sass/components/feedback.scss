@@ -1,0 +1,90 @@
+.feedback {
+  padding: 120px;
+
+  &__wrapper {
+  height: 863px;
+    background: url("../img/questions/questions_1.jpg") no-repeat;
+    background-position: 15px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+  }
+
+  &__form {
+    margin-right: 65px;
+  }
+}
+
+.form {
+  padding: 75px 154px 104px 112px;
+  max-width: 735px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $color-text-additional;
+  align-items: baseline;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    top:4%;
+    left:4%;
+    z-index: 0;
+    width: 690px;
+    height: 690px;
+    display: block;
+    border: 1px solid $form-border;
+    transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
+  }
+
+  &__header {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    max-width: 420px;
+  }
+
+  &__inputs{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+  }
+
+  &__input {
+    z-index: 10;
+    margin-bottom: 17px;
+    padding: 15px 20px ;
+    border: 1px solid $form-border;
+    &::placeholder{
+      font-family: 'Gotham Pro';
+      font-weight: 300;
+      @include font(16px, 22.4px);
+      color: #98A4AE;
+    }
+  }
+  & textarea{
+    resize: none;
+    height: 100px;
+  }
+
+  &__btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    background-color: $color-button-active;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    >span{
+      font-family: 'Gotham Pro';
+      font-weight: 400;
+      @include font(16px, 22.4px);
+      text-transform: uppercase;
+      color: $color-text-additional;
+    }
+  }
+}

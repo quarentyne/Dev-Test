@@ -63,6 +63,20 @@
   }
 }
 
+.title{
+  font-family: 'Gotham Pro';
+  @include font(44px, 57.2px);
+  font-weight: normal;
+  color: $color-text-base;
+}
+
+.meaning{
+  font-family: 'Gotham Pro';
+  @include font(18px, 25.2px);
+  color: $color-text-base;
+  font-weight: 300;
+}
+
 .sense {
   &__navigation {
     display: flex;
@@ -72,17 +86,11 @@
   }
 
   &__header {
-    @include font(44px, 57.2px);
-    font-weight: normal;
-    color:$color-text-base;
     margin-bottom: 40px;
   }
 
   &__text {
-    max-width: 460px;
-    @include font(18px, 25.2px);
-    color: $color-text-base;
-    font-weight: 300;
+    max-width: 460px;    
     >p:not(:last-child){
       margin-bottom: 20px;
     }
