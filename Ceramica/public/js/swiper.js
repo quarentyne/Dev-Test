@@ -66,6 +66,7 @@ function magnyfying(parentElement, zoom) {
   const height = glass.offsetHeight / 2;
 
   glass.addEventListener('mousemove', moveGlass);
+  image.addEventListener('mousemove', moveGlass);
 
   function moveGlass(event) {
     event.preventDefault();
