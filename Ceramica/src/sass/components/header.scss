@@ -1,109 +1,119 @@
-.header{
+.header {
   font-family: 'Gotham Pro';
   font-weight: normal;
-  @include font(16px, 18.51px);
-  position: relative;
+  text-transform: uppercase;
+  color: $color-text-base;
 
-  &__inner{
-    padding-top: 4px;
-    padding-bottom: 3px;
+  &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
-
+    align-items: center;
   }
-  &__btn{
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: transparent;
+}
+
+.menu {
+  &__btn {
     border: 1px solid $color-focus-red;
-    padding: 11px 34px;
-    @include font(14px, 16.2px);
+    background-color: transparent;
+    text-transform: uppercase;
     color: $color-text-base;
-  }
-  &::after{
-    content: '';
-    position: absolute;
-    padding-bottom: 10px;
-    width: 100%;
-    border-bottom: 1px solid #CFDAE3;
-    z-index: 20;
+    padding: 11px 35px;
+    @include font(14px, 16.2px);
   }
 }
 
-.nav{
-  &__highlight{
-    color: $color-focus-red;
-  }
-}
-
-.nav-list{
+.nav {
   display: flex;
-  position: relative;
-  text-transform: uppercase;
-  &__item{
+  align-items: center;
+
+  &__item:not(:last-child) {
     margin-right: 40px;
   }
-  &__link{
+  &__item{
+    position: relative;
+    min-width: 38px;
+    min-height: 19px;
+  }
+
+  &__link {
     color: $color-text-base;
-    &:hover {
+    &:hover{
       color: $color-focus-red;
     }
   }
-}
 
-.nav-list__lang{
-  position: absolute;
-}
-.lang{
-  &__item{
-    display: none;
-    margin-bottom: 15px;
+  &__highlight {
+    color: $color-focus-red;
   }
 
-  &__item:first-child{
-    display: flex;
-    align-items: center;
-    &::after{
-      display: table;
-      content: '';
-      width: 6px;
-      height: 3px;
-      background: url("../icons/LangArrow.svg") no-repeat;
-      margin-left: 8px;
-      margin-top: 3px;
-    }
+  &__lang {
+    position: absolute;
   }
+}
+
+.lang {
   &:hover &__item {
     display: flex;  
   }
 
-  &__link{
+  &__item {
+    display: none;
+    margin-bottom: 15px;
+    &:first-child{
+      display: flex;
+      align-items: center;
+      &::after{
+        display: table;
+        content: '';
+        width: 6px;
+        height: 3px;
+        background: url("../icons/LangArrow.svg") no-repeat;
+        margin-left: 8px;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  &__link {
     color: $color-text-base;
   }
 }
 
-.toolbar-list{
-  margin-bottom: -3px;
+.toolbar {
   display: flex;
-  align-items: center;    
-  &__item{
-    &:not(:last-child){
-      margin-right: 26px;
-    }
+  align-items: center;
+  // .toolbar__item
+
+  &__item:not(:last-child) {
+    margin-right: 26px;
   }
-  &__link svg{
-    fill: $color-text-base;
-    &:hover{
-      fill: $color-focus-red;
+
+  &__link {
+    >svg{
+      fill: $color-text-base;
+      &:hover{
+        fill:$color-focus-red;
+      }
     }
   }
 }
 
-.toolbar-heart {
+.heart {
   position: relative;
-  &__rate {
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 18px;
+      width: 18px;
+      height: 18px;
+      background-color: $color-focus-red;
+      transform: rotate(15deg);
+    }
+
+  &__amount {
     position: absolute;
+    font-family: 'Gotham Pro';
     font-weight: 700;
     @include font(8px, 10.4px);
     color: $color-text-additional;
@@ -111,15 +121,5 @@
     top: -6px;
     left: 23px;
     z-index: 20;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 18px;
-    width: 18px;
-    height: 18px;
-    background-color: $color-focus-red;
-    transform: rotate(15deg);
   }
 }
