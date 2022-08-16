@@ -23,13 +23,6 @@ const projectsSlider = new Swiper('.projects__slider', {
   },
 })
 
-const projectCarousel = new Swiper(".project-carousel", {
-  spaceBetween: 40,
-  slidesPerView: 3,
-  watchSlidesProgress: true,
-  loop: true,
-});
-
 const options = {
   parent: document.querySelector('.project-slider'),
   startPosition: {
@@ -43,6 +36,12 @@ const options = {
   zoom: 2,
 }
 
+const projectCarousel = new Swiper(".project-carousel", {
+  spaceBetween: 40,
+  slidesPerView: 3,
+  watchSlidesProgress: true,
+  loop: true,
+});
 
 const projectElements = new Swiper(".project-slider", {
   spaceBetween: 1940,
@@ -66,6 +65,14 @@ const blogCarousel = new Swiper('.blog__carousel', {
   slidesPerView: 4.2,
   watchSlidesProgress: true,
   loop: true,
+  breakpoints: {
+    1400: {
+      slidesPerView: 4.2,
+    },
+    340: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 function magnyfying(options) {
@@ -102,6 +109,7 @@ function magnyfying(options) {
     glassIcon.style.opacity = 0;
     const imageWidth = image.getBoundingClientRect().width;
     const imageHeight = image.getBoundingClientRect().height;
+    console.log(imageWidth);
 
     glass.style.backgroundImage = "url('" + image.src + "')";
     glass.style.backgroundRepeat = "no-repeat";

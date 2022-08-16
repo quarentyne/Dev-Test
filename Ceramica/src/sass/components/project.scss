@@ -1,10 +1,24 @@
 .project-slider {
   max-width: 1070px; 
+
+  &__img-big{
+    width: 1070px;
+    height: 806px;
+    @media screen and (max-width: 1400px) {
+      width: 713px;
+      height: 470px;
+    }
+  }
 }
 
 .carousel-wrapper{
   margin-left: 90%;
   position: relative;
+
+  @media screen and (max-width:1400px) {
+    margin-left: 0;
+    margin-top: 100px;
+  }
 }
 
 .glass{
@@ -24,8 +38,15 @@
   bottom: 60px;
   overflow: hidden;
 
+  @media screen and (max-width:1400px) {
+    position: relative;
+    overflow:visible;
+  }
+
   &__image {
     width: 327px;
-    height: 245px;
+    height: auto;
   }
 }
+
+

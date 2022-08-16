@@ -31,6 +31,10 @@
     color: $color-text-base;
     padding: 11px 35px;
     @include font(14px, 16.2px);
+
+    @media screen and (max-width: 1400px) {
+      @include font(12px, 14.2px);
+    }
   }
 }
 
@@ -40,6 +44,10 @@
 
   &__item:not(:last-child) {
     margin-right: 40px;
+    
+    @media screen and (max-width: 1400px) {
+      margin-right: 30px;
+    }
   }
   &__item{
     position: relative;
@@ -49,6 +57,11 @@
 
   &__link {
     color: $color-text-base;
+    @include font(16px, 18.51px);
+
+    @media screen and (max-width: 1400px) {
+        @include font(14px, 16.2px);
+      }
     &:hover{
       color: $color-focus-red;
     }
@@ -71,6 +84,13 @@
   &__item {
     display: none;
     margin-bottom: 15px;
+    @include font(16px, 18.51px);    
+
+    @media screen and (max-width: 1400px) {
+      @include font(14px, 16.2px);
+
+    }
+
     &:first-child{
       display: flex;
       align-items: center;

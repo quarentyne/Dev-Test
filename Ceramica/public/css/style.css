@@ -201,6 +201,8 @@ body {
 
 .nav__link {
   color: #40474E;
+  font-size: 16px;
+  line-height: 1.156875;
 }
 
 .nav__link:hover {
@@ -224,6 +226,8 @@ body {
 .lang__item {
   display: none;
   margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.156875;
 }
 
 .lang__item:first-child {
@@ -476,6 +480,11 @@ body {
   max-width: 1070px;
 }
 
+.project-slider__img-big {
+  width: 1070px;
+  height: 806px;
+}
+
 .carousel-wrapper {
   margin-left: 90%;
   position: relative;
@@ -507,7 +516,7 @@ body {
 
 .project-carousel__image {
   width: 327px;
-  height: 245px;
+  height: auto;
 }
 
 .projects {
@@ -863,7 +872,7 @@ body {
 }
 
 .feedback {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .feedback__wrapper {
@@ -1199,4 +1208,89 @@ body {
 
 .intelligence__dev > a {
   margin-left: 4px;
+}
+
+@media screen and (max-width: 1400px) {
+  .menu__btn {
+    font-size: 12px;
+    line-height: 1.1833333333;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    line-height: 1.1571428571;
+  }
+
+  .lang__item {
+    font-size: 14px;
+    line-height: 1.1571428571;
+  }
+
+  .description__title {
+    font-size: 66px;
+    line-height: 1.0151515152;
+  }
+
+  .description__text {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .project-slider__img-big {
+    width: 713px;
+    height: 470px;
+  }
+
+  .carousel-wrapper {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .project-carousel {
+    position: relative;
+    overflow: visible;
+  }
+
+  .full-slider__content {
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 35px;
+    line-height: 1.2857142857;
+  }
+
+  .meaning {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .btn {
+    font-size: 12px;
+    line-height: 1.1833333333;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .instagram__account {
+    max-height: 100px;
+  }
+
+  .instagram__logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .instagram__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .instagram__btn {
+    padding: 8px 22px;
+  }
 }

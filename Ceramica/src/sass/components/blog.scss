@@ -42,6 +42,9 @@
   &__type {
     @include font(14px, 18.2px);
     padding: 4px 10px;
+    // @media screen and (max-width:1400px) {
+    //   @include font(12px, 15px);
+    // }
   }
 
   &__type-news {
@@ -54,6 +57,9 @@
 
   &__date {
     @include font(14px, 18.2px);
+    // @media screen and (max-width:1400px) {
+    //   @include font(12px, 15px);
+    // }
   }
 
   &__link {
@@ -67,6 +73,10 @@
     &:hover{
       color: $color-button-active;
     }
+
+    // @media screen and (max-width:1400px) {
+    //   @include font(16px, 20px);
+    // }
   }
 
   &__statistic {

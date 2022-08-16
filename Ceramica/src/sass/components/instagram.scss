@@ -39,6 +39,10 @@
     justify-content: space-between;
     font-family: 'Gotham Pro';
     font-weight: normal;
+
+    @media screen and (max-width: 1000px){
+      max-height: 100px;
+    }
     
   }
 
@@ -49,12 +53,21 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 1000px){
+      width: 30px;
+      height: 30px;
+    }
   }
 
   &__link {
     @include font(24px, 28.8px);
     color: $color-text-base;
     cursor:default;
+
+    @media screen and (max-width: 1000px) {
+      @include font(20px, 24px);
+    }
   }
 
   &__btn {
@@ -67,6 +80,9 @@
     cursor: pointer;
     >span{
       font-family: 'Gotham Pro';
+    }
+    @media screen and (max-width: 1000px){
+      padding: 8px 22px;
     }
   }
 }

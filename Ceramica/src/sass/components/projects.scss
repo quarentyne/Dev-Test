@@ -57,6 +57,9 @@
   &__content {
     width: 540px;
     margin-left: 85px;
+    @media screen and (max-width:1400px) {
+      margin-left: 0;
+    }
   }
   &__project{
     min-width: 0;
@@ -68,6 +71,10 @@
   @include font(44px, 57.2px);
   font-weight: normal;
   color: $color-text-base;
+
+  @media screen and (max-width:1400px) {
+    @include font(35px, 45px);
+  }
 }
 
 .meaning{
@@ -75,6 +82,10 @@
   @include font(18px, 25.2px);
   color: $color-text-base;
   font-weight: 300;
+
+  @media screen and (max-width:1400px) {
+    @include font(16px, 20px);
+  }
 }
 
 .sense {
@@ -106,4 +117,8 @@
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media screen and (max-width:1400px) {
+    @include font(12px, 14.2px);
+  }
 }
