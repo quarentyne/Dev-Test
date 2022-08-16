@@ -30,6 +30,20 @@ const projectCarousel = new Swiper(".project-carousel", {
   loop: true,
 });
 
+const options = {
+  parent: document.querySelector('.project-slider'),
+  startPosition: {
+    left: 189,
+    bottom: 212,
+  },
+  glass: {
+    glassImageSrc: "../icons/MagnifyingGlassPlus.svg",
+    backgroundColor: 'rgba(249, 249, 250, 0.2)',
+  },
+  zoom: 2,
+}
+
+
 const projectElements = new Swiper(".project-slider", {
   spaceBetween: 1940,
 
@@ -39,11 +53,10 @@ const projectElements = new Swiper(".project-slider", {
   on: {
     slideChange: function () {
       const parent = document.querySelector('.project-slider');
-      setTimeout(magnyfying.bind(magnyfying, parent, 2), 0);
+      setTimeout(magnyfying.bind(magnyfying, options), 0);
     },
     init: function () {
-      const parent = document.querySelector('.project-slider');
-      setTimeout(magnyfying.bind(magnyfying, parent, 2), 0);
+      setTimeout(magnyfying.bind(magnyfying, options), 0);
     }
   }
 });
@@ -55,46 +68,69 @@ const blogCarousel = new Swiper('.blog__carousel', {
   loop: true,
 });
 
-
-function magnyfying(parentElement, zoom) {
-  const slide = parentElement.querySelector('.swiper-slide-active');
-
+function magnyfying(options) {
+  const slide = options.parent.querySelector('.swiper-slide-active');
   const image = slide.querySelector('.project-slider__img-big');
-  const glass = slide.querySelector('.glass');
+  let glass;
+  let glassIcon;
+
+  if (!slide.querySelector('.glass')) {
+    glass = document.createElement('DIV');
+    glass.setAttribute('class', 'glass');
+    glass.style.left = options.startPosition.left + 'px';
+    glass.style.bottom = options.startPosition.bottom + 'px';
+
+    glassIcon = document.createElement('IMG');
+    glassIcon.src = options.glass.glassImageSrc;
+    glass.append(glassIcon);
+
+    setGlassesBackground();
+    slide.append(glass);
+  } else {
+    glass = slide.querySelector('.glass');
+    glassIcon = slide.querySelector('.glassIcon');
+  }
 
   const width = glass.offsetWidth / 2;
   const height = glass.offsetHeight / 2;
 
-  glass.addEventListener('mousemove', moveGlass);
+  glassIcon.addEventListener('mousemove', moveGlass);
   image.addEventListener('mousemove', moveGlass);
 
   function moveGlass(event) {
     event.preventDefault();
+    glassIcon.style.opacity = 0;
+    const imageWidth = image.getBoundingClientRect().width;
+    const imageHeight = image.getBoundingClientRect().height;
 
     glass.style.backgroundImage = "url('" + image.src + "')";
     glass.style.backgroundRepeat = "no-repeat";
-    glass.style.backgroundSize = (image.width * zoom) + "px " + (image.height * zoom) + "px";
+    glass.style.backgroundSize = (imageWidth * options.zoom) + "px " + (imageHeight * options.zoom) + "px";
 
     let position = getCursorPosition(event);
     let positionX = position.x;
     let positionY = position.y;
 
-    if (positionX > image.width - (width / zoom)) {
-      positionX = image.width - (width / zoom);
+    if (positionX > imageWidth - (width / options.zoom)) {
+      positionX = imageWidth - (width / options.zoom);
+      setGlassesBackground();
     }
-    if (positionX < width / zoom) {
-      positionX = width / zoom;
+    if (positionX < width / options.zoom) {
+      positionX = width / options.zoom;
+      setGlassesBackground();
     }
-    if (positionY > image.height - (height / zoom)) {
-      positionY = image.height - (height / zoom);
+    if (positionY > imageHeight - (height / options.zoom)) {
+      positionY = imageHeight - (height / options.zoom);
+      setGlassesBackground();
     }
-    if (positionY < height / zoom) {
-      positionY = height / zoom;
+    if (positionY < height / options.zoom) {
+      positionY = height / options.zoom;
+      setGlassesBackground();
     }
+
     glass.style.left = (positionX - width) + "px";
     glass.style.top = (positionY - height) + "px";
-    glass.style.backgroundPosition = "-" + ((positionX * zoom) - width) + "px -" + ((positionY * zoom) - height) + "px";
-
+    glass.style.backgroundPosition = "-" + ((positionX * options.zoom) - width) + "px -" + ((positionY * options.zoom) - height) + "px";
   }
 
   function getCursorPosition(event) {
@@ -105,5 +141,11 @@ function magnyfying(parentElement, zoom) {
     coordX = coordX - window.pageXOffset;
     coordY = coordY - window.pageYOffset;
     return { x: coordX, y: coordY }
+  }
+
+  function setGlassesBackground() {
+    glassIcon.style.opacity = 1;
+    glass.style.backgroundSize = 'inherit';
+    glass.style.backgroundColor = options.glass.backgroundColor;
   }
 }
