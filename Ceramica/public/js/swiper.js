@@ -109,7 +109,6 @@ function magnyfying(options) {
     glassIcon.style.opacity = 0;
     const imageWidth = image.getBoundingClientRect().width;
     const imageHeight = image.getBoundingClientRect().height;
-    console.log(imageWidth);
 
     glass.style.backgroundImage = "url('" + image.src + "')";
     glass.style.backgroundRepeat = "no-repeat";
