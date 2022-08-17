@@ -49,7 +49,7 @@
   &__logo {
     width: 50px;
     height: 50px;
-    background-color: $color-text-base;
+    background-color: $text-base;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@
 
   &__link {
     @include font(24px, 28.8px);
-    color: $color-text-base;
+    color: $text-base;
     cursor:default;
 
     @media screen and (max-width: 1000px) {
@@ -71,12 +71,12 @@
   }
 
   &__btn {
-    color: $color-dots;
+    color: $white;
     @include font(14px, 16.2px);
     text-transform: uppercase;
     padding: 13px 31px;
-    background-color: $color-button-active;
-    border: 1px solid $color-button-active;
+    background-color: $blue-active;
+    border: 1px solid $blue-active;
     cursor: pointer;
     >span{
       font-family: 'Gotham Pro';
@@ -89,6 +89,6 @@
 
 .tile {
   &__element {
-    background-color: $color-text-additional;
+    background-color: $clear-white;
   }
 }

@@ -46,7 +46,7 @@
 .description {
   &__title {
     @include font(86px, 87px);
-    color: $color-text-additional;
+    color: $clear-white;
     margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: normal;
@@ -59,7 +59,7 @@
   &__text {
     @include font(30px, 42px);
     max-width: 540px;
-    color: $color-text-additional;
+    color: $clear-white;
 
     @media screen and (max-width:1400px) {
       @include font(25px, 35px);
@@ -93,7 +93,7 @@
     justify-content: space-between;
     align-items: center;
     >svg:hover{
-      fill: $color-focus-red;
+      fill: $red-active;
       cursor: pointer;
     }
   }
@@ -101,7 +101,7 @@
   &__divider {
     width: 1.5px;
     height: 34px;
-    background-color: $color-text-additional;
+    background-color: $clear-white;
   }
 }
 
@@ -142,7 +142,7 @@
   height: 5px;
   border: none;
   border-radius: 50%;
-  background-color: $color-dots;
+  background-color: $white;
   opacity: 1;
   cursor: pointer;
 }
@@ -150,6 +150,6 @@
 .swiper-pagination-bullet-active{
   width: 15px;
   height: 15px;
-  border: 1px solid $color-dots;
+  border: 1px solid $white;
   background-color: transparent;
 }

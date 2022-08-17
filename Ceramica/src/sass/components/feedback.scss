@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $color-text-additional;
+  background-color: $clear-white;
   align-items: baseline;
   position: relative;
   &::before{
@@ -34,7 +34,7 @@
     width: 690px;
     height: 690px;
     display: block;
-    border: 1px solid $form-border;
+    border: 1px solid $light-gray;
     transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
   }
 
@@ -57,7 +57,7 @@
     z-index: 10;
     margin-bottom: 17px;
     padding: 15px 20px ;
-    border: 1px solid $form-border;
+    border: 1px solid $light-gray;
     &::placeholder{
       font-family: 'Gotham Pro';
       font-weight: 300;
@@ -76,7 +76,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 30px;
-    background-color: $color-button-active;
+    background-color: $blue-active;
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -85,7 +85,7 @@
       font-weight: 400;
       @include font(16px, 22.4px);
       text-transform: uppercase;
-      color: $color-text-additional;
+      color: $clear-white;
     }
   }
 }

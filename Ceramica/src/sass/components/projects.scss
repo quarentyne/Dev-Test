@@ -22,10 +22,10 @@
     height: 54px;
     cursor: pointer;
     &:hover>svg{
-      fill: $color-focus-red;
+      fill: $red-active;
     }
     >svg{
-      fill: $color-text-base;
+      fill: $text-base;
     }
   }
 }
@@ -33,7 +33,7 @@
 .cathword {
   margin-bottom: 80px;
   font-family: 'Gotham Pro';
-  color: $color-text-base;
+  color: $text-base;
   &__text {
     font-weight: normal;
     letter-spacing: 0.1em;
@@ -70,7 +70,7 @@
   font-family: 'Gotham Pro';
   @include font(44px, 57.2px);
   font-weight: normal;
-  color: $color-text-base;
+  color: $text-base;
 
   @media screen and (max-width:1400px) {
     @include font(35px, 45px);
@@ -80,7 +80,7 @@
 .meaning{
   font-family: 'Gotham Pro';
   @include font(18px, 25.2px);
-  color: $color-text-base;
+  color: $text-base;
   font-weight: 300;
 
   @media screen and (max-width:1400px) {
@@ -112,8 +112,8 @@
   @include font(14px, 16.2px);
   font-family: 'Gotham Pro';
   padding: 18px 45px;
-  color: $color-button-active;
-  border: 1px solid $color-button-active;
+  color: $blue-active;
+  border: 1px solid $blue-active;
   background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
