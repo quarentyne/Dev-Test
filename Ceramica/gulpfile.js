@@ -89,8 +89,6 @@ const clear = () => {
   return del('./public');
 };
 
-// Watcher
-
 const watcher = () => {
   watch('./src/html/**/*.html', html);
   watch('./src/sass/**/*.scss', scss);
