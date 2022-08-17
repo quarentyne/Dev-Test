@@ -10,7 +10,6 @@ const watch = gulp.watch;
 const series = gulp.series;
 const parallel = gulp.parallel;
 
-// Plugins
 const fileInclude = require('gulp-file-include');
 const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
@@ -22,9 +21,6 @@ const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const minify = require('gulp-minify');
-
-
-// Server
 
 const server = () => {
   browserSync.init({
@@ -41,23 +37,6 @@ const html = () => {
     .pipe(dest('./public'))
     .pipe(browserSync.stream());
 };
-
-// const chunk = () => {
-//   return src('./src/chunk/*.html')
-//     .pipe(browserSync.stream());
-// };
-
-// const css = () => {
-//   return src('./src/css/*.css')
-//     .pipe(concat('style.css'))
-//     .pipe(autoprefixer())
-//     .pipe(gcmq())
-//     .pipe(dest('./public/css'))
-//     .pipe(csso())
-//     .pipe(rename({ suffix: '.min' }))
-//     .pipe(dest('./public/css'))
-//     .pipe(browserSync.stream());
-// }
 
 const scss = () => {
   return src('./src/sass/*.scss')
@@ -121,10 +100,6 @@ const watcher = () => {
   watch('./src/ts/**/*.ts', typescript);
   watch('./src/js/**/*.js', javascript);
 };
-
-// exports.html = html;
-// exports.watch = watcher;
-// exports.css = css;
 
 exports.dev = series(
   clear,
