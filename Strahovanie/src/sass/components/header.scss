@@ -1,0 +1,54 @@
+.header {
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+  }
+
+  &__nav {
+    margin-left: 80px;
+  }
+
+  &__btn {
+    border: 1px solid $blue;
+    background-color: $blue;
+    color: $white;
+    padding: 18px 40px;
+  }
+}
+
+.nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 39px;
+  }
+
+  &__link {
+    color: $blue-dark;
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+    @include font(16px, 19.49px);
+    
+    &:hover{
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+
+.btn {
+  border-radius: 50px;
+  cursor: pointer;
+  @include font(16px, 16px);
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  >span{
+    text-transform: uppercase;
+  }
+}
