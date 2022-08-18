@@ -1,0 +1,65 @@
+.insurance {
+  padding: 90px 0;
+
+  &__wrapper {
+    background-color: #072D85;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4px 46px rgba(123, 139, 181, 0.22));
+    display: flex;
+  }
+
+  &__image {
+    background: url('../icons/Intersect.svg') no-repeat;
+    background-position: 80% 40%;
+    align-self: flex-end;
+  }
+
+  &__content {
+    padding: 75px 0;
+  }
+}
+
+.action-plan {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+
+  &__header {
+    margin-bottom: 36px;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    @include font(46px, 50px);
+    color: $white;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    padding-left: 43px;
+    background: url('../icons/shield.svg') no-repeat;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text{
+    color: $white;
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    @include font(24px, 24px);
+  }
+
+  &__button {
+    align-self: flex-start;
+    background-color: #2463F6;
+    color: $white;
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    @include font(16px, 16px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 27px 70px;
+  }
+}
