@@ -144,6 +144,11 @@ body {
   padding: 18px 40px;
 }
 
+.header__btn:hover {
+  background-color: #1442AE;
+  border-color: #1442AE;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
