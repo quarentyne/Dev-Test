@@ -184,3 +184,136 @@ body {
 .btn > span {
   text-transform: uppercase;
 }
+
+.footer {
+  background-color: #F1F8FE;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.footer__logotype {
+  margin-bottom: 60px;
+}
+
+.footer__navigation {
+  margin-bottom: 52px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.navigation__link {
+  color: #001237;
+  text-transform: uppercase;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.navigation__link:hover {
+  border-bottom: 1px solid #001237;
+}
+
+.basement {
+  padding-top: 50px;
+}
+
+.basement__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.basement__copyright {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 1.7142857143;
+  color: #001237;
+}
+
+.basement__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.basement__contact:not(:last-child) {
+  margin-right: 36px;
+}
+
+.basement__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #001237;
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2222222222;
+}
+
+.basement__link > svg {
+  margin-right: 8px;
+}
+
+.basement__link > svg:hover {
+  fill: #6B82B0;
+}
+
+.basement__dev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.basement__text {
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6428571429;
+  opacity: 0.9;
+  color: #2F2F2F;
+  margin-right: 10px;
+}
+
+.basement__developer > svg:hover {
+  fill: #6B82B0;
+}

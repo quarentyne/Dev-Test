@@ -1,0 +1,136 @@
+.footer {
+  background-color: $blue-pale;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+//   // .footer__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    border-bottom: 1px solid $gray;
+  }
+
+//   // .footer__logotype
+
+  &__logotype {
+    margin-bottom: 60px;
+  }
+
+//   // .footer__navigation
+
+  &__navigation {
+    margin-bottom: 52px;
+  }
+
+//   // .footer__basement
+
+//   &__basement {}
+}
+
+.navigation {
+
+//   // .navigation__list
+
+  &__list {
+    display: flex;
+  }
+
+//   // .navigation__item
+
+  &__item:not(:last-child) {
+    margin-right: 34px;
+  }
+
+//   // .navigation__link
+
+  &__link {
+    color:$blue-dark;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova';
+    @include font(16px, 20px);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    &:hover{
+      border-bottom: 1px solid $blue-dark;
+    }
+  }
+}
+
+.basement {
+  padding-top: 50px;
+
+//   // .basement__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+//   // .basement__item
+
+//   &__item {}
+
+//   // .basement__copyright
+
+  &__copyright {
+    font-family: 'Proxima Nova';
+    @include font(14px, 24px);
+    color: $blue-dark;
+  }
+
+//   // .basement__contacts
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+//   // .basement__contact
+
+  &__contact {
+    &:not(:last-child){
+      margin-right: 36px;
+    }
+    
+  }
+
+//   // .basement__link
+
+  &__link {
+    display: flex;
+    align-items: center;    
+    >svg {
+      margin-right: 8px;    
+      &:hover {
+        fill: $marine;
+      }
+    }
+    color: $blue-dark;
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    @include font(18px, 22px);
+  }
+
+//   // .basement__dev
+
+  &__dev{
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    @include font(14px, 23px);
+    opacity: 0.9;
+    color: $gray-dark;
+    margin-right: 10px;
+  }
+
+  &__developer>svg:hover{
+    fill: $marine;
+  }
+}
