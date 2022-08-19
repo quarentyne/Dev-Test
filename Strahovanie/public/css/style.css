@@ -272,6 +272,10 @@ body {
   padding: 27px 70px;
 }
 
+.action-plan__button:hover {
+  background-color: #1442AE;
+}
+
 .footer {
   background-color: #F1F8FE;
   padding-top: 80px;
