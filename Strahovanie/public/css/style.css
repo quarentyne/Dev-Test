@@ -581,6 +581,11 @@ body {
   background-color: #F1F8FE;
 }
 
+.proposals__wrapper {
+  -webkit-box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+  box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+}
+
 .proposals__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -693,4 +698,139 @@ body {
 
 .characteristic__button:hover {
   background-color: #E28300;
+}
+
+.callback {
+  background-color: #F8FBFE;
+  padding: 70px 0 90px 0;
+}
+
+.callback__header {
+  margin-bottom: 40px;
+  color: #001237;
+}
+
+.feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feed__form {
+  width: 490px;
+  margin-right: 160px;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.feedback__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.feedback__item input {
+  width: 100%;
+}
+
+.feedback__item textarea {
+  width: 100%;
+  height: 125px;
+  resize: none;
+  padding: 10px 15px;
+}
+
+.feedback__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__sender:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feedback__sender > input {
+  width: 230px;
+}
+
+.feedback__label {
+  color: #001237;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.feedback input {
+  padding: 10px 15px;
+  border: 1px solid #D7E1E9;
+  border-radius: 6px;
+}
+
+.feedback__btn {
+  margin-top: 32px;
+  background-color: #FF9504;
+  border: none;
+  padding: 22px 55px;
+}
+
+.feedback__btn > span {
+  color: #FFFFFF;
+}
+
+.feedback__btn:hover {
+  background-color: #E28300;
+}
+
+.instruction {
+  background-color: #353D52;
+  border-radius: 12px;
+  width: 695px;
+  height: 465px;
+  background-image: url("../icons/Intersect.svg");
+  background-repeat: no-repeat;
+  background-position: 140% -640%;
+}
+
+.instruction__wrapper {
+  padding: 65px 65px 75px 65px;
+}
+
+.instruction__header {
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.instruction__item {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  padding-left: 24px;
+  position: relative;
+}
+
+.instruction__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.instruction__item::before {
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 45%;
 }

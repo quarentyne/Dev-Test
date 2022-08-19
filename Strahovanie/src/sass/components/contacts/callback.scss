@@ -1,0 +1,153 @@
+.callback {
+  background-color: #F8FBFE;
+  padding: 70px 0 90px 0;
+  // .callback__header
+
+  &__header {
+    margin-bottom: 40px;
+    color: $blue-dark;
+  }
+}
+
+
+.feed {
+  display: flex;
+
+//   // .feed__form
+
+  &__form {
+    width: 490px;
+    margin-right: 160px;
+  }
+
+//   // .feed__instruction
+
+//   &__instruction {}
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+//   // .feedback__list
+
+//   &__list {}
+
+//   // .feedback__item
+
+  &__item {
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+    & input{
+      width: 100%;
+    }
+    & textarea {
+      width: 100%;
+      height: 125px;
+      resize: none;
+      padding: 10px 15px;
+    }
+  }
+
+//   // .feedback__person
+
+  &__person {
+    display: flex;
+
+  }
+
+//   // .feedback__sender
+
+  &__sender {
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+    >input{
+      width: 230px;
+    }
+  }
+
+//   // .feedback__label
+
+  &__label {
+    color: $blue-dark;
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    @include font(16px, 26px)
+  }
+
+  & input{
+    padding: 10px 15px;
+    border: 1px solid #D7E1E9;
+    border-radius: 6px;
+  }
+
+
+//   // .feedback__btn
+
+  &__btn {
+    margin-top: 32px;
+    background-color: $orange;
+    border: none;
+    padding: 22px 55px;
+    >span{
+      color: $white;
+    }
+    &:hover{
+      background-color: $orange-active;
+    }
+  }
+}
+
+
+.instruction {
+  background-color: #353D52;
+  border-radius: 12px;
+  width: 695px;
+  height: 465px;
+  background-image: url('../icons/Intersect.svg');
+  background-repeat: no-repeat;
+  background-position: 140% -640%;
+
+
+//   // .instruction__wrapper
+
+  &__wrapper {
+    padding: 65px 65px 75px 65px;
+  }
+
+//   // .instruction__header
+
+  &__header {
+    color: $white;
+    margin-bottom: 30px;
+  }
+
+//   // .instruction__list
+
+//   &__list {}
+
+//   // .instruction__item
+
+  &__item {
+    color: $white;
+    @include font(24px,24px);
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    padding-left: 24px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 12px;
+      height: 3px;
+      background-color: $white;
+      position: absolute;
+      left: 0;
+      top: 45%;
+    }
+  }
+}
