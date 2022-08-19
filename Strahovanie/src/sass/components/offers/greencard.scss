@@ -1,0 +1,73 @@
+.greencard {
+  background-color: $blue-pale;
+  padding: 60px 0;
+
+  &__header {
+    padding: 30px 40px;
+    color: $blue-dark;
+  }
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    border-top: 1px solid #CFDAE2;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child){
+      margin-right: 120px;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    color: $blue;
+    padding: 20px 63px;
+    border: 2px solid $blue;
+    >span{
+      margin-left: 5px;
+    }
+    &:hover{
+      color: $white;
+      background-color: $blue;
+      >svg{
+        fill: $white;
+      }
+    }
+  }
+}
+
+.offer {
+
+  &__wrapper {
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 10px;
+    max-width: 1270px;
+  }
+}
+
+.options {
+
+  &__header {
+    font-family: "Proxima Nova";
+    font-weight: normal;
+    @include font(16px, 19px);
+    color: $gray-blue;
+  }
+
+  &__value {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    @include font(18px, 29px);
+    color: $blue-dark;
+  }
+}

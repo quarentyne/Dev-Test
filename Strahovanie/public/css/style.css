@@ -214,6 +214,13 @@ body {
   padding: 75px 0;
 }
 
+.header {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.0869565217;
+}
+
 .action-plan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,10 +234,6 @@ body {
 
 .action-plan__header {
   margin-bottom: 36px;
-  font-family: "Proxima Nova";
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.0869565217;
   color: #FFFFFF;
 }
 
@@ -400,4 +403,87 @@ body {
 
 .basement__developer > svg:hover {
   fill: #6B82B0;
+}
+
+.greencard {
+  background-color: #F1F8FE;
+  padding: 60px 0;
+}
+
+.greencard__header {
+  padding: 30px 40px;
+  color: #001237;
+}
+
+.greencard__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 40px;
+  border-top: 1px solid #CFDAE2;
+}
+
+.greencard__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.greencard__item:not(:last-child) {
+  margin-right: 120px;
+}
+
+.greencard__button {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #2155CF;
+  padding: 20px 63px;
+  border: 2px solid #2155CF;
+}
+
+.greencard__button > span {
+  margin-left: 5px;
+}
+
+.greencard__button:hover {
+  color: #FFFFFF;
+  background-color: #2155CF;
+}
+
+.greencard__button:hover > svg {
+  fill: #FFFFFF;
+}
+
+.offer__wrapper {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  max-width: 1270px;
+}
+
+.options__header {
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #263238;
+}
+
+.options__value {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6111111111;
+  color: #001237;
 }
