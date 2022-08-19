@@ -1,0 +1,66 @@
+.offer {
+  padding: 40px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    @include font(16px, 22px);
+    color: $blue-dark;
+    margin-bottom: 25px;
+  }
+
+  &__header {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    @include font(30px, 22px);
+    color: $blue-dark;
+  }
+}
+
+.sorting {
+  border-radius: 6px;
+  display: flex;
+  border: 1px solid #D7E1E9;
+
+  &__item {
+    min-width: 180px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    &:not(:last-child) {
+      border-right: 1px solid #D7E1E9;
+    }
+    >button{
+      border: none;
+      background-color: transparent; 
+      cursor: pointer;
+      >span {
+        
+        font-family: 'Proxima Nova';
+        font-weight: normal;
+        @include font(16px, 19px);
+        color: #7E8595;
+        cursor: pointer;
+      }
+    }
+    &:hover>button>span{
+      color: $blue-dark;      
+    }
+  }
+  &__item_active {
+    background-color: rgba(33, 85, 207, 0.09);
+    >button{
+      >span{
+        font-weight: 600;
+        color: $blue-dark;
+      }
+    }
+  }
+}
