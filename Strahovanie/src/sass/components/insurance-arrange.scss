@@ -1,0 +1,149 @@
+.swiper-pagination-progressbar{
+  position: absolute;
+  max-width: 780px;
+  background-color: #C0C2C3;
+}
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal{
+  height: 1px;
+  left: 23.5%;
+  top: 25%;
+}
+:root {
+  --swiper-theme-color: #4268B2;
+}
+
+
+.arrange {
+  background-color: #F8FBFE;
+  padding: 90px 0 100px 0;
+  position: relative;
+
+  &__header {
+    text-align: center;
+    color: $blue-dark;
+    margin-bottom: 75px;
+  }
+}
+
+.swiper {
+
+  &__nav {
+    position: relative;
+  }
+}
+
+.switch {
+  margin-bottom: 50px;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 1010px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_active {
+      >span.switch__index{
+        background-color: #4268B2;
+        &::after {
+          background-color: rgba(66, 104, 178, 0.15);
+        }
+        &:hover{
+          background-color: #4268B2;
+          color: #F6F6F6;
+        }
+      }
+      >span.switch__description{
+        color: $gray-blue;
+      }
+    }
+  }
+
+  &__index {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #F6F6F6;
+    @include font(24px, 36px);
+    background-color: #C0C2C3;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 22px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      background-color: rgba(192, 194, 195, 0.15);
+      border-radius: 50%;
+      z-index: 1;
+    }
+    &:hover{
+      background-color: $white;
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  &__description {
+    color: #9E9E9E;
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    @include font(16px, 26px);
+  }
+}
+
+.step {
+  padding: 40px 65px 40px 90px;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+  margin: 0 auto;
+  max-width: 1050px;
+  background: url('../icons/Intersect_opacity.svg') no-repeat;
+  background-position: 2% 90%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    border-right: 1px dashed #D9D9D9;
+  }
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__header {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    @include font(30px, 39px);
+    color: $blue-dark;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    color: #000;
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    @include font(16px, 27px);
+    opacity: 0.8;
+  }
+}

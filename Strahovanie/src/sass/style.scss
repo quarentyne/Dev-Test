@@ -1,19 +1,26 @@
 @use "sass:math";
 
+// global
 @import "components/fonts.scss";
 @import "components/reset.scss";
 @import "components/global.scss";
 @import "components/vars.scss";
 
+// often
 @import "components/header.scss";
 @import "components/insurance-case.scss";
 @import "components/footer.scss";
 
+@import "components/insurance-arrange.scss";
+
+// offers
 @import "components/offers/greencard.scss";
 @import "components/offers/offers.scss";
 @import "components/offers/proposal.scss";
 
+// contacts
 @import "components/contacts/callback.scss";
 
+// about
 @import "components/about/about-us.scss";
 @import "components/about/insurance-types.scss";
