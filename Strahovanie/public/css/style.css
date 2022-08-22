@@ -872,3 +872,106 @@ body {
   color: #001237;
   opacity: 0.8;
 }
+
+.insurances {
+  padding: 100px 0;
+}
+
+.insurances__header {
+  color: #001237;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.belay__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.belay__link {
+  position: relative;
+}
+
+.belay__img {
+  border-radius: 10px;
+}
+
+.belay__description {
+  position: absolute;
+  bottom: -176px;
+  left: 24px;
+  color: #FFFFFF;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.belay__wrapper {
+  width: 360px;
+  height: 200px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.belay__name {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "Proxima Nova";
+  color: #FFFFFF;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.belay__gradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), color-stop(93%, rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 93%);
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 93%);
+  width: 100%;
+  height: 120px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.belay__osago {
+  background: url("../img/insurance/osago.jpg") no-repeat;
+}
+
+.belay__kasko {
+  background: url("../img/insurance/kasko.jpg") no-repeat;
+}
+
+.belay__greencard {
+  background: url("../img/insurance/green-card.jpg") no-repeat;
+}
+
+.belay__tourists {
+  background: url("../img/insurance/tourists.jpg") no-repeat;
+}
