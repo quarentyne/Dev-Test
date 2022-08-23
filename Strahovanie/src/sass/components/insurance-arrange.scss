@@ -116,6 +116,7 @@
   max-width: 1050px;
   background: url('../icons/Intersect_opacity.svg') no-repeat;
   background-position: 2% 90%;
+  overflow-x: hidden;
 
   &__wrapper {
     display: flex;

@@ -122,6 +122,7 @@ body {
   max-width: 1560px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
 }
 
 .header__inner {
@@ -550,6 +551,7 @@ body {
   max-width: 1050px;
   background: url("../icons/Intersect_opacity.svg") no-repeat;
   background-position: 2% 90%;
+  overflow-x: hidden;
 }
 
 .step__wrapper {
@@ -674,7 +676,7 @@ body {
 }
 
 .offer {
-  padding: 40px 0;
+  padding: 35px 0;
 }
 
 .offer__content {
@@ -687,6 +689,10 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.offer__sense {
+  padding: 10px 0;
 }
 
 .offer__text {

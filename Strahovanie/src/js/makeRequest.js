@@ -4,7 +4,7 @@ const menu = document.querySelector('.switch__menu');
 
 const arrange = new Swiper('.arrange__swiper', {
   slidesPerView: 1,
-  spaceBetween: 500,
+  // spaceBetween: 500,
   navigation: false,
   pagination: {
     el: ".swiper-pagination",

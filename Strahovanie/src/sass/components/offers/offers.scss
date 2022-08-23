@@ -1,5 +1,5 @@
 .offer {
-  padding: 40px 0;
+  padding: 35px 0;
 
   &__content {
     display: flex;
@@ -7,6 +7,10 @@
     align-items: center;
   }
 
+  &__sense{
+    padding: 10px 0;
+  }
+  
   &__text {
     font-family: 'Proxima Nova';
     font-weight: normal;
