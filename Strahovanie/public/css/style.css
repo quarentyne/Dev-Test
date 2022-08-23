@@ -427,9 +427,13 @@ body {
   --swiper-theme-color: #4268B2;
 }
 
+.swiper-slide {
+  padding-bottom: 50px;
+}
+
 .arrange {
   background-color: #F8FBFE;
-  padding: 90px 0 100px 0;
+  padding: 90px 0 50px 0;
   position: relative;
 }
 
@@ -551,7 +555,6 @@ body {
   max-width: 1050px;
   background: url("../icons/Intersect_opacity.svg") no-repeat;
   background-position: 2% 90%;
-  overflow-x: hidden;
 }
 
 .step__wrapper {
