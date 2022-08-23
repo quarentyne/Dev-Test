@@ -1,0 +1,145 @@
+.confirence {
+
+//   // .confirence__swiper
+
+  &__swiper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+//   // .confirence__navigation
+
+  &__navigation {
+    max-width: 320px;
+  }
+
+//   // .confirence__header
+
+  &__header {
+    color: $blue-dark;
+    margin-bottom: 105px;
+  }
+
+//   // .confirence__nav
+
+  &__nav {
+    display: flex;
+    max-width: 100px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+//   // .confirence__btn
+
+  &__btn {
+    background-color: $blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+//   // .confirence__prev
+
+//   &__prev {}
+
+//   // .confirence__next
+
+//   &__next {}
+
+//   // .confirence__wrapper
+
+  &__wrapper {
+    max-width: 1140px;
+    overflow: hidden;
+    padding: 90px 0 100px 0;
+  }
+}
+
+// .container {}
+
+// .header {}
+
+// .swiper-wrapper {}
+
+// .swiper-slide {}
+
+.review {
+  width: 360px;
+  box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+  border-radius: 10px;
+//   // .review__card
+
+  &__card {
+    padding: 27px 30px 44px 26px;
+  }
+
+//   // .review__rating
+
+  &__rating {
+    display: flex;
+    margin-bottom: 19px;
+  }
+
+//   // .review__star
+
+  &__star {
+    &:not(:last-child){
+      margin-right: 5px;
+    }
+  }
+
+//   // .review__text
+
+  &__text {
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    @include font(16px, 23px);
+    color: $gray-blue;
+    opacity: 0.8;
+    margin-bottom: 35px;
+  }
+
+//   // .review__author
+
+//   &__author {}
+}
+
+.author {
+  display: flex;
+
+  // .author__photo
+
+  &__photo {
+    margin-right: 30px;
+  }
+
+  // // .author__info
+
+  &__info {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+  }
+
+  // // .author__name
+
+  &__name {
+    color: $gray-blue;
+    @include font(20px, 24px);
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+  }
+
+  // // .author__time
+
+  &__time {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    @include font(14px, 20px);
+    color: #C0C2C3;
+  }
+}
