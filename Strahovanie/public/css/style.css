@@ -190,11 +190,15 @@ body {
   text-transform: uppercase;
 }
 
-.insurance {
-  padding: 90px 0;
+.insurance__container {
+  max-width: 1620px;
 }
 
 .insurance__wrapper {
+  padding: 100px 45px 80px 45px;
+}
+
+.insurance__inner {
   background-color: #072D85;
   border-radius: 12px;
   -webkit-filter: drop-shadow(0px 4px 46px rgba(123, 139, 181, 0.22));
