@@ -192,6 +192,7 @@ body {
 
 .insurance__container {
   max-width: 1620px;
+  padding: 0;
 }
 
 .insurance__wrapper {
