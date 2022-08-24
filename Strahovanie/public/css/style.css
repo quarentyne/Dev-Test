@@ -190,13 +190,12 @@ body {
   text-transform: uppercase;
 }
 
-.insurance__container {
-  max-width: 1620px;
-  padding: 0;
+.insurance {
+  padding: 100px 0px 80px 0;
 }
 
-.insurance__wrapper {
-  padding: 100px 45px 80px 45px;
+.insurance__container {
+  overflow: visible;
 }
 
 .insurance__inner {

@@ -1,12 +1,8 @@
 .insurance {
+  padding: 100px 0px 80px 0;
 
   &__container{
-    max-width: 1620px;
-    padding: 0;
-  }
-
-  &__wrapper{
-    padding: 100px 45px 80px 45px;
+    overflow: visible;
   }
 
   &__inner {
