@@ -596,16 +596,20 @@ body {
 }
 
 .confirence__swiper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  max-width: 1210px;
+  padding: 40px 35px 0px 35px;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.confirence__container {
+  max-width: 1610px;
+  padding-left: 40px;
 }
 
 .confirence__navigation {
-  max-width: 320px;
+  width: 320px;
+  padding-top: 40px;
 }
 
 .confirence__header {
@@ -642,9 +646,13 @@ body {
 }
 
 .confirence__wrapper {
-  max-width: 1140px;
-  overflow: hidden;
-  padding: 90px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 50px 0px;
 }
 
 .review {
