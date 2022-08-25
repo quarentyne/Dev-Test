@@ -1,0 +1,1 @@
+const triggers=document.querySelectorAll(".trigger");triggers.forEach(e=>{e.addEventListener("click",()=>{e.closest(".accordeon__wrapper").classList.toggle("active")})});

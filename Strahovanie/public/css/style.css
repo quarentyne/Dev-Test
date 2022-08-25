@@ -757,11 +757,11 @@ body {
   position: relative;
 }
 
-.accordeon__wrapper_active {
+.accordeon__wrapper.active {
   background-color: #F8FBFE;
 }
 
-.accordeon__wrapper_active::after {
+.accordeon__wrapper.active::after {
   position: absolute;
   content: "";
   left: 0;
@@ -769,6 +769,22 @@ body {
   height: 100%;
   width: 4px;
   background-color: #2155CF;
+}
+
+.accordeon__wrapper.active .trigger__btn {
+  background-color: #2155CF;
+  border-color: #2155CF;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.accordeon__wrapper.active .trigger__btn > svg > path {
+  stroke: #FFFFFF;
+}
+
+.accordeon__wrapper.active .answer {
+  display: block;
 }
 
 .accordeon__trigger {
@@ -800,10 +816,6 @@ body {
   color: #1A1B20;
 }
 
-.trigger__text_active {
-  background-color: #F8FBFE;
-}
-
 .trigger__btn {
   height: 32px;
   width: 32px;
@@ -818,27 +830,14 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.trigger__btn_active {
-  background-color: #2155CF;
-  border-color: #2155CF;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.trigger__btn_active > svg > path {
-  stroke: #FFFFFF;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .answer {
   padding: 35px 0 40px 40px;
   display: none;
-}
-
-.answer_active {
-  display: block;
 }
 
 .answer__text {

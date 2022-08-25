@@ -18,10 +18,11 @@
   box-shadow: 0px 4px 46px rgba(161, 168, 188, 0.22);
   border-radius: 8px;
 
-  &__wrapper {    
-    position: relative;
-    &_active {
-      &::after{
+  &__wrapper {  
+    position: relative; 
+    &.active {
+      background-color: #F8FBFE;
+      &::after {
         position: absolute;
         content: '';
         left: 0;
@@ -29,10 +30,23 @@
         height: 100%;
         width: 4px;
         background-color: $blue;
+      }        
+
+      .trigger__btn {
+        background-color: $blue;
+        border-color: $blue;
+        transform: rotate(180deg);
+      
+        >svg>path {
+          stroke: $white;
+        }
       }
-      background-color: #F8FBFE;
+      
+      .answer {
+        display: block;
+      }
     }
-  }
+  } 
 
   &__trigger {
     padding: 32px 40px;
@@ -48,16 +62,12 @@
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #D7E1E9;
-//   // .trigger__text
 
   &__text {
     font-family: 'Proxima Nova';
     font-weight: 600;
     @include font( 22px, 22px);
     color: #1A1B20;
-    &_active{
-      background-color: #F8FBFE;
-    }
   }
 
   &__btn {
@@ -68,23 +78,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &_active{
-      background-color: $blue;
-      border-color: $blue;
-      transform: rotate(180deg);
-      >svg>path{
-        stroke: $white;
-      }
-    }
+    transition: 0.5s;
   }
+  
 }
 
 .answer {
   padding: 35px 0 40px 40px;
   display: none;
-  &_active{
-    display: block;
-  }
 
   &__text {
     max-width: 1100px;
