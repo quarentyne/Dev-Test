@@ -1,14 +1,10 @@
 .offer {
-  padding: 35px 0;
+  padding: 44px 0;
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &__sense{
-    padding: 10px 0;
   }
   
   &__text {
@@ -17,6 +13,7 @@
     @include font(16px, 22px);
     color: $blue-dark;
     margin-bottom: 25px;
+    margin-top: -5px;
   }
 
   &__header {
@@ -24,6 +21,10 @@
     font-weight: 600;
     @include font(30px, 22px);
     color: $blue-dark;
+  }
+
+  &__list{
+    margin-top: 7px;
   }
 }
 
@@ -34,9 +35,8 @@
 
   &__item {
     min-width: 180px;
-    padding: 12px 15px;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
+    padding: 12px 12px;
     cursor: pointer;
     &:not(:last-child) {
       border-right: 1px solid #D7E1E9;
@@ -45,8 +45,7 @@
       border: none;
       background-color: transparent; 
       cursor: pointer;
-      >span {
-        
+      >span {        
         font-family: 'Proxima Nova';
         font-weight: normal;
         @include font(16px, 19px);
@@ -60,6 +59,7 @@
   }
   &__item_active {
     background-color: rgba(33, 85, 207, 0.09);
+    min-width: 185px;
     >button{
       >span{
         font-weight: 600;

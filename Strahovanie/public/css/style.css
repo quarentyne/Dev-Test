@@ -1050,7 +1050,7 @@ body {
 }
 
 .offer {
-  padding: 35px 0;
+  padding: 44px 0;
 }
 
 .offer__content {
@@ -1065,10 +1065,6 @@ body {
   align-items: center;
 }
 
-.offer__sense {
-  padding: 10px 0;
-}
-
 .offer__text {
   font-family: "Proxima Nova";
   font-weight: normal;
@@ -1076,6 +1072,7 @@ body {
   line-height: 1.375;
   color: #001237;
   margin-bottom: 25px;
+  margin-top: -5px;
 }
 
 .offer__header {
@@ -1084,6 +1081,10 @@ body {
   font-size: 30px;
   line-height: 0.7333333333;
   color: #001237;
+}
+
+.offer__list {
+  margin-top: 7px;
 }
 
 .sorting {
@@ -1096,12 +1097,8 @@ body {
 
 .sorting__item {
   min-width: 180px;
-  padding: 12px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  text-align: center;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
@@ -1130,6 +1127,7 @@ body {
 
 .sorting__item_active {
   background-color: rgba(33, 85, 207, 0.09);
+  min-width: 185px;
 }
 
 .sorting__item_active > button > span {
