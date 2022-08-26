@@ -968,7 +968,7 @@ body {
 }
 
 .greencard__header {
-  padding: 30px 40px;
+  padding: 31px 41px;
   color: #001237;
 }
 
@@ -982,7 +982,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 25px 40px;
+  padding: 24px 40px;
   border-top: 1px solid #CFDAE2;
 }
 
@@ -990,6 +990,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.greencard__options {
+  max-height: 43px;
 }
 
 .greencard__item:not(:last-child) {
@@ -1010,7 +1014,7 @@ body {
 }
 
 .greencard__button > span {
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .greencard__button:hover {
@@ -1035,6 +1039,9 @@ body {
   font-size: 16px;
   line-height: 1.1875;
   color: #263238;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .options__value {
@@ -1043,6 +1050,8 @@ body {
   font-size: 18px;
   line-height: 1.6111111111;
   color: #001237;
+  max-height: 23px;
+  margin-top: 3px;
 }
 
 .offer {
