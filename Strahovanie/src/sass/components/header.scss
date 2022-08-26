@@ -1,4 +1,5 @@
 .header {
+  border-bottom: 1px solid #D7E1E9;
 
   &__inner {
     display: flex;
@@ -29,8 +30,13 @@
     display: flex;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 39px;
+  &__item {
+    margin-top: 5px;
+    display: flex;
+    &:not(:last-child){
+      margin-right: 39px;
+    }
+    
   }
 
   &__link {
@@ -38,10 +44,21 @@
     font-weight: 400;
     font-family: 'Proxima Nova';
     @include font(16px, 19.49px);
-    
-    &:hover{
-      border-bottom: 1px solid $blue;
+    position: relative;
+    &:hover {
+      &::after {
+        height: 1px;
+        width: 100%;
+        content: '';
+        position: absolute;
+        background-color: $blue;
+        left: 0;
+        bottom: -2px;
+      }
     }
+    
+      // border-bottom: 1px solid $blue;
+    
   }
 }
 

@@ -125,6 +125,10 @@ body {
   overflow: hidden;
 }
 
+.header {
+  border-bottom: 1px solid #D7E1E9;
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +164,13 @@ body {
   display: flex;
 }
 
+.nav__item {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav__item:not(:last-child) {
   margin-right: 39px;
 }
@@ -170,10 +181,17 @@ body {
   font-family: "Proxima Nova";
   font-size: 16px;
   line-height: 1.218125;
+  position: relative;
 }
 
-.nav__link:hover {
-  border-bottom: 1px solid #2155CF;
+.nav__link:hover::after {
+  height: 1px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-color: #2155CF;
+  left: 0;
+  bottom: -2px;
 }
 
 .btn {
