@@ -42,7 +42,7 @@
   &__link {
     color: $blue-dark;
     font-weight: 400;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     @include font(16px, 19.49px);
     position: relative;
     &:hover {
@@ -55,10 +55,7 @@
         left: 0;
         bottom: -2px;
       }
-    }
-    
-      // border-bottom: 1px solid $blue;
-    
+    }    
   }
 }
 
@@ -66,7 +63,7 @@
   border-radius: 50px;
   cursor: pointer;
   @include font(16px, 16px);
-  font-family: "Proxima Nova";
+  font-family: $font-main;
   font-weight: 600;
   letter-spacing: 0.08em;
   >span{
