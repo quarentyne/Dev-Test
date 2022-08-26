@@ -979,9 +979,9 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   padding: 24px 40px;
   border-top: 1px solid #CFDAE2;
 }
@@ -990,10 +990,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.greencard__options {
-  max-height: 43px;
 }
 
 .greencard__item:not(:last-child) {
@@ -1042,6 +1038,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2px;
 }
 
 .options__value {
@@ -1050,8 +1047,6 @@ body {
   font-size: 18px;
   line-height: 1.6111111111;
   color: #001237;
-  max-height: 23px;
-  margin-top: 3px;
 }
 
 .offer {

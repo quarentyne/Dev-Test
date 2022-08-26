@@ -10,17 +10,13 @@
   &__content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 24px 40px;
     border-top: 1px solid #CFDAE2;
   }
 
   &__list {
     display: flex;
-  }
-
-  &__options{
-    max-height: 43px;
   }
 
   &__item {
@@ -67,6 +63,7 @@
     @include font(16px, 19px);
     color: $gray-blue;
     display: flex;
+    margin-bottom: 2px;
   }
 
   &__value {
@@ -74,7 +71,5 @@
     font-weight: 600;
     @include font(18px, 29px);
     color: $blue-dark;
-    max-height: 23px;
-    margin-top: 3px;
   }
 }
