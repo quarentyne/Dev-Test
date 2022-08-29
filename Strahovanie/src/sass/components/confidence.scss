@@ -72,7 +72,7 @@
   }
 
   &__text {
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: normal;
     @include font(16px, 23px);
     color: $gray-blue;
@@ -97,13 +97,13 @@
   &__name {
     color: $gray-blue;
     @include font(20px, 24px);
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 600;
     margin-bottom: 5px;
   }
 
   &__time {
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 400;
     @include font(14px, 20px);
     color: #C0C2C3;
