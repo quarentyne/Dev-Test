@@ -28,3 +28,9 @@ body{
   padding: 0 15px;
   overflow: hidden;
 }
+
+.heading {
+  font-family: $font-main;
+  font-weight: 700;
+  @include font(46px, 50px);
+}

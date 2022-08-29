@@ -125,6 +125,13 @@ body {
   overflow: hidden;
 }
 
+.heading {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.0869565217;
+}
+
 .header {
   border-bottom: 1px solid #D7E1E9;
 }
@@ -224,24 +231,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 520px;
 }
 
 .insurance__image {
   background: url("../icons/Intersect.svg") no-repeat;
-  background-position: 74% 40%;
+  background-position: 72% 40%;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
 .insurance__content {
   padding: 75px 0;
-}
-
-.heading {
-  font-family: "Proxima Nova";
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.0869565217;
 }
 
 .action-plan {
@@ -253,11 +254,16 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 710px;
+  margin-left: 12px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .action-plan__header {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   color: #FFFFFF;
+  margin-top: 5px;
 }
 
 .action-plan__list {
@@ -265,7 +271,8 @@ body {
 }
 
 .action-plan__item {
-  padding-left: 43px;
+  margin-left: 5px;
+  padding-left: 42px;
   background: url("../icons/shield.svg") no-repeat;
 }
 

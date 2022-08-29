@@ -10,11 +10,12 @@
     border-radius: 12px;
     filter: drop-shadow(0px 4px 46px rgba(123, 139, 181, 0.22));
     display: flex;
+    max-height: 520px;
   }
 
   &__image {
     background: url('../icons/Intersect.svg') no-repeat;
-    background-position: 74% 40%;
+    background-position: 72% 40%;
     align-self: flex-end;
   }
 
@@ -23,20 +24,17 @@
   }
 }
 
-.heading{
-  font-family: $font-main;
-  font-weight: 700;
-  @include font(46px, 50px);
-}
-
 .action-plan {
   display: flex;
   flex-direction: column;
   max-width: 710px;
+  margin-left: 12px;
+  align-items: flex-start;
 
   &__header {
-    margin-bottom: 36px;    
+    margin-bottom: 32px;    
     color: $white;
+    margin-top: 5px;
   }
 
   &__list {
@@ -44,7 +42,8 @@
   }
 
   &__item {
-    padding-left: 43px;
+    margin-left: 5px;
+    padding-left: 42px;
     background: url('../icons/shield.svg') no-repeat;
     &:not(:last-child){
       margin-bottom: 20px;
