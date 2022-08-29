@@ -977,6 +977,7 @@ body {
 .greencard__header {
   padding: 31px 41px;
   color: #001237;
+  margin-top: 2px;
 }
 
 .greencard__content {
