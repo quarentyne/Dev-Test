@@ -644,7 +644,7 @@ body {
 
 .confirence__swiper {
   max-width: 1210px;
-  padding: 40px 35px 0px 35px;
+  padding: 40px 35px 0px 47px;
   padding-top: 40px;
   overflow: hidden;
 }
@@ -661,7 +661,8 @@ body {
 
 .confirence__header {
   color: #001237;
-  margin-bottom: 105px;
+  margin-bottom: 106px;
+  line-height: 56px;
 }
 
 .confirence__nav {
@@ -673,6 +674,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-left: 2px;
 }
 
 .confirence__btn {
@@ -704,6 +706,7 @@ body {
 
 .review {
   width: 360px;
+  height: 320px;
   -webkit-box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
   box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
   border-radius: 10px;
@@ -717,7 +720,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 19px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .review__star:not(:last-child) {
@@ -731,7 +737,7 @@ body {
   line-height: 1.4375;
   color: #263238;
   opacity: 0.8;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .author {
@@ -761,6 +767,7 @@ body {
   line-height: 1.2;
   font-family: "Proxima Nova";
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .author__time {

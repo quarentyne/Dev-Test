@@ -2,7 +2,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 const confidence = new Swiper('.confirence__swiper', {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 45,
   navigation: {
     nextEl: '.confirence__next',
     prevEl: '.confirence__prev',
