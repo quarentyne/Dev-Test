@@ -1541,7 +1541,9 @@ body {
 .insurances__header {
   color: #001237;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
+  font-size: 46px;
+  line-height: 1.1956521739;
 }
 
 .belay__list {
@@ -1598,7 +1600,7 @@ body {
   font-family: "Proxima Nova";
   color: #FFFFFF;
   margin-left: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .belay__gradient {
