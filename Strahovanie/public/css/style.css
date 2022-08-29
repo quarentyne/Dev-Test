@@ -1332,6 +1332,7 @@ body {
 }
 
 .feed__form {
+  margin-top: -3px;
   width: 490px;
   margin-right: 160px;
 }
@@ -1350,7 +1351,7 @@ body {
 }
 
 .feedback__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .feedback__item input {
@@ -1359,9 +1360,11 @@ body {
 
 .feedback__item textarea {
   width: 100%;
-  height: 125px;
+  height: 124px;
   resize: none;
-  padding: 10px 15px;
+  padding: 10px 14px;
+  border: 1px solid #D7E1E9;
+  border-radius: 6px;
 }
 
 .feedback__person {
@@ -1384,16 +1387,59 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.625;
+  display: inline-block;
+  height: 12px;
+  margin-bottom: 20px;
 }
 
 .feedback input {
-  padding: 10px 15px;
+  padding: 10px 14px;
   border: 1px solid #D7E1E9;
   border-radius: 6px;
 }
 
+.feedback input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.1875;
+  font-family: "Proxima Nova";
+  color: #9E9E9E;
+  opacity: 0.8;
+}
+
+.feedback input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.1875;
+  font-family: "Proxima Nova";
+  color: #9E9E9E;
+  opacity: 0.8;
+}
+
+.feedback input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.1875;
+  font-family: "Proxima Nova";
+  color: #9E9E9E;
+  opacity: 0.8;
+}
+
+.feedback input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.1875;
+  font-family: "Proxima Nova";
+  color: #9E9E9E;
+  opacity: 0.8;
+}
+
+.feedback input::placeholder {
+  font-size: 16px;
+  line-height: 1.1875;
+  font-family: "Proxima Nova";
+  color: #9E9E9E;
+  opacity: 0.8;
+}
+
 .feedback__btn {
-  margin-top: 32px;
+  margin-top: 28px;
   background-color: #FF9504;
   border: none;
   padding: 22px 55px;
@@ -1411,14 +1457,14 @@ body {
   background-color: #353D52;
   border-radius: 12px;
   width: 695px;
-  height: 465px;
+  height: 464px;
   background-image: url("../icons/Intersect.svg");
   background-repeat: no-repeat;
   background-position: 140% -640%;
 }
 
 .instruction__wrapper {
-  padding: 65px 65px 75px 65px;
+  padding: 67px 64px 74px 64px;
 }
 
 .instruction__header {
@@ -1446,8 +1492,8 @@ body {
   height: 3px;
   background-color: #FFFFFF;
   position: absolute;
-  left: 0;
-  top: 45%;
+  left: -1px;
+  top: 35%;
 }
 
 .about {
