@@ -30,7 +30,7 @@
     bottom: -176px;
     left: 24px;
     color: $white;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 600;
     @include font(22px, 22px);
   }
@@ -47,7 +47,7 @@
   &__name{
     @include font(22px, 22px);
     font-weight: 600;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     color: $white;
     margin-left: 24px;
     margin-bottom: 21px;    
