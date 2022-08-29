@@ -14,7 +14,7 @@
 
   &__image {
     background: url('../icons/Intersect.svg') no-repeat;
-    background-position: 80% 40%;
+    background-position: 74% 40%;
     align-self: flex-end;
   }
 
@@ -23,8 +23,8 @@
   }
 }
 
-.header{
-  font-family: 'Proxima Nova';
+.heading{
+  font-family: $font-main;
   font-weight: 700;
   @include font(46px, 50px);
 }
@@ -53,7 +53,7 @@
 
   &__text{
     color: $white;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 400;
     @include font(24px, 24px);
   }
@@ -62,7 +62,7 @@
     align-self: flex-start;
     background-color: #2463F6;
     color: $white;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 600;
     @include font(16px, 16px);
     letter-spacing: 0.08em;

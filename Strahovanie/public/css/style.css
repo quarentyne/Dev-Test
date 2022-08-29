@@ -228,7 +228,7 @@ body {
 
 .insurance__image {
   background: url("../icons/Intersect.svg") no-repeat;
-  background-position: 80% 40%;
+  background-position: 74% 40%;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
@@ -237,7 +237,7 @@ body {
   padding: 75px 0;
 }
 
-.header {
+.heading {
   font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 46px;

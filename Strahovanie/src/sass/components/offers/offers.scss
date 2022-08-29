@@ -8,7 +8,7 @@
   }
   
   &__text {
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: normal;
     @include font(16px, 22px);
     color: $blue-dark;
@@ -17,7 +17,7 @@
   }
 
   &__header {
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 600;
     @include font(30px, 22px);
     color: $blue-dark;
@@ -43,7 +43,7 @@
       background-color: transparent; 
       cursor: pointer;
       >span {        
-        font-family: 'Proxima Nova';
+        font-family: $font-main;
         font-weight: normal;
         @include font(16px, 19px);
         color: #7E8595;
