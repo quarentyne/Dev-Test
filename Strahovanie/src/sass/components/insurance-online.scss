@@ -2,13 +2,14 @@
   padding-bottom: 90px;
 
   &__container {
+    padding-right: 10px;
     max-width: 1300px;
     position: relative;
     &::after {
       position: absolute;
       content: '';
       height: 70px;
-      width: 100%;
+      width: 97%;
       background: linear-gradient(360deg, #FFFFFF 28.73%, rgba(255, 255, 255, 0) 100%);
       bottom: 0;
       left: 0;
@@ -16,7 +17,7 @@
   }
 
   &__header {
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 700;
     @include font(36px, 44px);
     color: $blue-dark;
@@ -24,7 +25,8 @@
   }
 
   &__content {
-    max-height: 295px;
+    max-width: 1274px;
+    max-height: 235px;
     overflow-y: scroll;
     position: relative;
 
@@ -45,13 +47,14 @@
   }
 
   &__text {
+    margin-right: 25px;
     color: $gray-blue;
-    font-family: 'Proxima Nova';
+    font-family: $font-main;
     font-weight: 400;
     @include font(16px, 23px);
     opacity: 0.8;
     &:not(:last-child){
-      margin-bottom: 35px;
+      margin-bottom: 25px;
     }
   }
 }
