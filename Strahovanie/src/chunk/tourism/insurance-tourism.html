@@ -1,0 +1,101 @@
+<section class="tourism">
+  <div class="container">
+    <div class="tourism__container">
+      <form action="" method="get" class="tourism__form touristic">
+        <h2 class="touristic__header heading">Туристическое страхование</h2>
+        <div class="touristic__trip trip">
+          <div class="trip__direction direction">
+            <label for="direction" class="trip__param direction__head"
+              >Направление поездки</label
+            >
+            <input
+              type="text"
+              name="direction"
+              id="direction"
+              class="direction__input touristic__input"
+            />
+            <div class="direction__ways">
+              <span class="direction__example">Например:</span>
+              <ul class="direction__list">
+                <li class="direction__item">
+                  <span>Шенгенская зона (Европа)</span>
+                </li>
+                <li class="direction__item"><span>Весь мир</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="trip__period period">
+            <div class="period__title">
+              <span class="period__head trip__param">Период поездки</span>
+              <span class="period__total">11 дней</span>
+            </div>
+            <div class="period__choice">
+              <div class="period__from">
+                <span class="period__time">От</span>
+                <select
+                  name="periodfrom"
+                  id="periodfrom"
+                  class="touristic__input period__input"
+                >
+                  <option value="">07.11.2019</option>
+                  <option value="">08.11.2019</option>
+                  <option value="">09.11.2019</option>
+                </select>
+              </div>
+              <div class="period__to">
+                <span class="period__time">До</span>
+                <select
+                  name="periodto"
+                  id="periodto"
+                  class="touristic__input period__input"
+                >
+                  <option value="">07.11.2019</option>
+                  <option value="">08.11.2019</option>
+                  <option value="">09.11.2019</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="touristic__tourists tourists">
+          <h4 class="tourists__header">Данные о туристах</h4>
+          <div class="tourists__info tourist">
+            <h6 class="tourist__number">Турист 1</h6>
+            <div class="tourist__info">
+              <div class="tourist__birthday">
+                <label for="birthday" class="trip__param">Дата рождения</label>
+                <input
+                  type="date"
+                  name="birthday"
+                  id="birthday"
+                  class="touristic__input"
+                />
+              </div>
+              <div class="tourist__goal">
+                <span class="trip__param">Цель поездки</span>
+                <select
+                  name="target"
+                  id="target"
+                  class="tourist__target touristic__input"
+                >
+                  <option value="">Посещение родственников</option>
+                  <option value="">Посещение родственников</option>
+                  <option value="">Посещение родственников</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="touristic__add new-tourist">
+          <span class="new-tourist__union"
+            ><img src="./icons/Union.svg" alt="union" width="14" height="14"
+          /></span>
+          <span class="new-tourist__text">Добавить туриста</span>
+        </button>
+        <button type="submit" class="btn touristic__result">
+          <span>От 1296 грн - смотреть полисы</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

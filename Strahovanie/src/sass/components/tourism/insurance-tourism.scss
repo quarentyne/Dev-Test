@@ -1,0 +1,331 @@
+.tourism {
+  background-color: $blue-pale;
+
+//   // .tourism__container
+
+  &__container {
+    padding: 50px;
+  }
+
+//   // .tourism__form
+
+  &__form {
+    max-width: 1072px;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 32px rgba(123, 139, 181, 0.2);
+    overflow: visible;
+  }
+}
+
+// .container {}
+
+.touristic {
+
+//   // .touristic__header
+  padding: 50px 31px;
+
+  &__header {
+    @include font(48px, 48px);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__input{
+    padding: 13px 21px 13px 16px;
+    border-radius: 6px;
+    border: 1px solid #D7E1E9;
+    @include font(16px, 19px);
+    font-family: $font-main;
+    font-weight: normal;
+    color: $gray-blue;
+    max-height: 46px;
+  }
+
+//   // .touristic__trip
+
+  &__trip {
+    margin-bottom: 32px;
+  }
+
+//   // .touristic__tourists
+
+  &__tourists {
+    margin-bottom: 32px;
+  }
+
+//   // .touristic__add
+
+  &__add {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+//   // .touristic__result
+
+  &__result {
+    margin: 0 auto;
+    display: block;
+    background-color: $orange;
+    border: none;
+    width: 410px;
+    height: 60px;
+    &:hover{
+      background-color: $orange-active;
+    }
+    & >span{
+      color: $white;
+    }
+  }
+}
+
+// .heading {}
+
+.trip {
+  display: flex;
+  justify-content: space-between;
+//   // .trip__direction
+
+  // &__direction {
+  // }
+
+//   // .trip__param
+
+  &__param {
+    font-family: $font-main;
+    @include font(16px, 26px);
+    color: $blue-dark;
+    font-weight: 600;
+  }
+
+//   // .trip__period
+
+  // &__period {}
+}
+
+.direction {
+  display: flex;
+  flex-direction: column;
+  width: 54.9%;
+
+//   // .direction__head
+
+//   &__head {}
+
+//   // .direction__input
+
+//   &__input {}
+
+//   // .direction__ways
+
+  &__ways {
+    display: flex;
+  }
+
+//   // .direction__example
+
+  &__example {
+    color: #8D94A4;
+    @include font(14px, 23px);
+    font-family: $font-main;
+    font-weight: normal;
+    margin-right: 9px;
+  }
+
+//   // .direction__list
+
+  &__list {
+    display: flex;
+    // align-items: center;
+  }
+
+  &__item {
+    >span{
+      font-family: $font-main;
+      font-weight: normal;
+      color: $blue;
+      @include font(14px, 14px);
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+    
+    &:not(:last-child){
+      margin-right: 12px;
+    }
+  }
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  width: 42.2%;
+
+  // .period__title
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // // .period__head
+
+  // &__head {}
+
+  // // .period__total
+
+  &__total {
+    color: $blue;
+    @include font(14px, 23px);
+    font-family: $font-main;
+    font-weight: 700;
+  }
+
+  // // .period__choice
+
+  &__choice {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input{
+    width: 174px;
+    background-color: $white;
+    appearance: none;
+    background: url('../icons/select.svg') no-repeat;
+    background-position: 87% 50%;
+  }
+
+  &__time{
+    font-family: $font-main;
+    @include font(14px, 23px);
+    font-weight: normal;
+    color: #8D94A4;
+    margin-right: 4px;
+  }
+  // // .period__from
+
+  // &__from {}
+
+  // // .period__to
+
+  // &__to {}
+}
+
+.tourists {
+
+//   // .tourists__header
+
+  &__header {
+    text-align: center;
+    font-family: $font-main;
+    @include font(22px, 22px);
+    font-weight: 600;
+    color: $blue-dark;
+    margin-bottom: 24px;
+  }
+
+//   // .tourists__info
+
+  &__info {
+    background-color: $blue-pale;
+    border: 1px solid #DEE5EC;
+    border-radius: 12px;
+    padding: 24px 30px 32px 30px;
+    max-height: 161px;
+  }
+}
+
+.tourist {
+
+
+//   // .tourist__number
+
+  &__number {
+    font-family: $font-main;
+    font-weight: 700;
+    @include font(14px, 23px);
+    color: #94A1AF;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+//   // .tourist__birthday
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  &__birthday {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+//   // .tourist__goal
+
+  &__goal {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+  }
+
+//   // .tourist__target
+
+  &__target {
+    appearance: none;
+    background: url('../icons/select.svg') no-repeat;
+    background-color: $white;
+    background-position: 97% 50%;
+  }
+}
+
+.new-tourist {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  &:hover &__union{
+    background-color: $blue-active;
+  }
+  
+  // .new-tourist__union
+
+  &__union {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  // .new-tourist__text
+
+  &__text {
+    font-family: $font-main;
+    font-weight: 400;
+    @include font(16px, 16px);
+    color: $blue-dark;
+  }
+}
+
+// .btn {
+//   text-align: center;
+//   background-color: $orange;
+//   border: none;
+//   width: 410px;
+//   height: 60px;
+//   &:hover{
+//     background-color: $orange-active;
+//   }
+//   & >span{
+//     color: $white;
+//   }
+// }

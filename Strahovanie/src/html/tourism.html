@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>О нас</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include("../chunk/header.html")
+      <main class="main">
+        @@include("../chunk/tourism/insurance-tourism.html")
+        @@include("../chunk/insurance-arrange.html")
+        @@include("../chunk/confidence.html") @@include("../chunk/faq.html")
+        @@include("../chunk/insurance-case.html")
+        @@include("../chunk/insurance-online.html")
+      </main>
+      @@include("../chunk/footer.html")
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/makeRequest-min.js"></script>
+    <script type="module" src="./js/confidence-min.js"></script>
+    <script src="./js/accordeon-min.js"></script>
+  </body>
+</html>
