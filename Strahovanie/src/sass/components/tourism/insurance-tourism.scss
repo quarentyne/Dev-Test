@@ -1,13 +1,9 @@
 .tourism {
-  background-color: $blue-pale;
-
-//   // .tourism__container
+  background-color: #F9FBFF;
 
   &__container {
     padding: 50px;
   }
-
-//   // .tourism__form
 
   &__form {
     max-width: 1072px;
@@ -19,11 +15,7 @@
   }
 }
 
-// .container {}
-
 .touristic {
-
-//   // .touristic__header
   padding: 50px 31px;
 
   &__header {
@@ -41,28 +33,21 @@
     font-weight: normal;
     color: $gray-blue;
     max-height: 46px;
+    margin-top: 5px;
   }
-
-//   // .touristic__trip
 
   &__trip {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
-
-//   // .touristic__tourists
 
   &__tourists {
     margin-bottom: 32px;
   }
 
-//   // .touristic__add
-
   &__add {
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
-
-//   // .touristic__result
 
   &__result {
     margin: 0 auto;
@@ -80,28 +65,17 @@
   }
 }
 
-// .heading {}
-
 .trip {
   display: flex;
   justify-content: space-between;
-//   // .trip__direction
-
-  // &__direction {
-  // }
-
-//   // .trip__param
 
   &__param {
     font-family: $font-main;
     @include font(16px, 26px);
     color: $blue-dark;
     font-weight: 600;
+    margin-top: -4px;
   }
-
-//   // .trip__period
-
-  // &__period {}
 }
 
 .direction {
@@ -109,21 +83,10 @@
   flex-direction: column;
   width: 54.9%;
 
-//   // .direction__head
-
-//   &__head {}
-
-//   // .direction__input
-
-//   &__input {}
-
-//   // .direction__ways
-
   &__ways {
     display: flex;
+    margin-top: 5px;
   }
-
-//   // .direction__example
 
   &__example {
     color: #8D94A4;
@@ -133,14 +96,12 @@
     margin-right: 9px;
   }
 
-//   // .direction__list
-
   &__list {
     display: flex;
-    // align-items: center;
   }
 
   &__item {
+    margin-top: 1px;
     >span{
       font-family: $font-main;
       font-weight: normal;
@@ -162,27 +123,18 @@
   flex-direction: column;
   width: 42.2%;
 
-  // .period__title
-
   &__title {
     display: flex;
     justify-content: space-between;
   }
-
-  // // .period__head
-
-  // &__head {}
-
-  // // .period__total
 
   &__total {
     color: $blue;
     @include font(14px, 23px);
     font-family: $font-main;
     font-weight: 700;
+    margin-top: -4px;
   }
-
-  // // .period__choice
 
   &__choice {
     display: flex;
@@ -194,7 +146,7 @@
     background-color: $white;
     appearance: none;
     background: url('../icons/select.svg') no-repeat;
-    background-position: 87% 50%;
+    background-position: 88% 52%;
   }
 
   &__time{
@@ -204,18 +156,15 @@
     color: #8D94A4;
     margin-right: 4px;
   }
-  // // .period__from
 
-  // &__from {}
-
-  // // .period__to
-
-  // &__to {}
+  &__to{
+    >span{
+      margin-right: 1px;
+    }
+  }
 }
 
 .tourists {
-
-//   // .tourists__header
 
   &__header {
     text-align: center;
@@ -223,24 +172,19 @@
     @include font(22px, 22px);
     font-weight: 600;
     color: $blue-dark;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
-
-//   // .tourists__info
 
   &__info {
     background-color: $blue-pale;
     border: 1px solid #DEE5EC;
     border-radius: 12px;
-    padding: 24px 30px 32px 30px;
+    padding: 20px 30px 32px 30px;
     max-height: 161px;
   }
 }
 
 .tourist {
-
-
-//   // .tourist__number
 
   &__number {
     font-family: $font-main;
@@ -248,10 +192,9 @@
     @include font(14px, 23px);
     color: #94A1AF;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;    
   }
-
-//   // .tourist__birthday
 
   &__info{
     display: flex;
@@ -264,21 +207,17 @@
     width: 200px;
   }
 
-//   // .tourist__goal
-
   &__goal {
     display: flex;
     flex-direction: column;
     width: 76%;
   }
 
-//   // .tourist__target
-
   &__target {
     appearance: none;
     background: url('../icons/select.svg') no-repeat;
     background-color: $white;
-    background-position: 97% 50%;
+    background-position: 97.5% 50%;
   }
 }
 
@@ -292,8 +231,6 @@
   &:hover &__union{
     background-color: $blue-active;
   }
-  
-  // .new-tourist__union
 
   &__union {
     width: 32px;
@@ -306,12 +243,11 @@
     margin-right: 8px;
   }
 
-  // .new-tourist__text
-
   &__text {
     font-family: $font-main;
     font-weight: 400;
     @include font(16px, 16px);
     color: $blue-dark;
+    margin-top: -2px;
   }
 }

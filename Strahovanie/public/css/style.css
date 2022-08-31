@@ -1772,7 +1772,7 @@ body {
 }
 
 .tourism {
-  background-color: #F1F8FE;
+  background-color: #F9FBFF;
 }
 
 .tourism__container {
@@ -1810,10 +1810,11 @@ body {
   font-weight: normal;
   color: #263238;
   max-height: 46px;
+  margin-top: 5px;
 }
 
 .touristic__trip {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .touristic__tourists {
@@ -1822,7 +1823,7 @@ body {
 
 .touristic__add {
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .touristic__result {
@@ -1857,6 +1858,7 @@ body {
   line-height: 1.625;
   color: #001237;
   font-weight: 600;
+  margin-top: -4px;
 }
 
 .direction {
@@ -1874,6 +1876,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5px;
 }
 
 .direction__example {
@@ -1889,6 +1892,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.direction__item {
+  margin-top: 1px;
 }
 
 .direction__item > span {
@@ -1932,6 +1939,7 @@ body {
   line-height: 1.6428571429;
   font-family: "Proxima Nova";
   font-weight: 700;
+  margin-top: -4px;
 }
 
 .period__choice {
@@ -1950,7 +1958,7 @@ body {
   -moz-appearance: none;
   appearance: none;
   background: url("../icons/select.svg") no-repeat;
-  background-position: 87% 50%;
+  background-position: 88% 52%;
 }
 
 .period__time {
@@ -1962,6 +1970,10 @@ body {
   margin-right: 4px;
 }
 
+.period__to > span {
+  margin-right: 1px;
+}
+
 .tourists__header {
   text-align: center;
   font-family: "Proxima Nova";
@@ -1969,14 +1981,14 @@ body {
   line-height: 1;
   font-weight: 600;
   color: #001237;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .tourists__info {
   background-color: #F1F8FE;
   border: 1px solid #DEE5EC;
   border-radius: 12px;
-  padding: 24px 30px 32px 30px;
+  padding: 20px 30px 32px 30px;
   max-height: 161px;
 }
 
@@ -1987,7 +1999,8 @@ body {
   line-height: 1.6428571429;
   color: #94A1AF;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
 }
 
 .tourist__info {
@@ -2027,7 +2040,7 @@ body {
   appearance: none;
   background: url("../icons/select.svg") no-repeat;
   background-color: #FFFFFF;
-  background-position: 97% 50%;
+  background-position: 97.5% 50%;
 }
 
 .new-tourist {
@@ -2070,4 +2083,5 @@ body {
   font-size: 16px;
   line-height: 1;
   color: #001237;
+  margin-top: -2px;
 }
