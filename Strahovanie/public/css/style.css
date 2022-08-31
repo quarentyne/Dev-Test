@@ -445,14 +445,14 @@ body {
 
 .swiper-pagination-progressbar {
   position: absolute;
-  max-width: 780px;
+  max-width: 100%;
   background-color: #C0C2C3;
 }
 
 .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
   height: 1px;
-  left: 23.5%;
+  left: 0;
   top: 35%;
 }
 
@@ -487,6 +487,7 @@ body {
 }
 
 .switch__menu {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
