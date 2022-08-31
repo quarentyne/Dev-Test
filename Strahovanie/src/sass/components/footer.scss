@@ -3,7 +3,7 @@
   padding-top: 80px;
   padding-bottom: 50px;
 
-  @media screen and (max-width: 375px){
+  @media screen and (max-width: $tablet){
     padding-top: 50px;
     padding-bottom: 54px;
   }
@@ -18,7 +18,7 @@
 
   &__logotype {
     margin-bottom: 60px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       >img{
         width: 185px;
         height: 41px;
@@ -29,7 +29,7 @@
 
   &__navigation {
     margin-bottom: 52px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 44px;
     }
   }
@@ -39,7 +39,7 @@
 
   &__list {
     display: flex;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       flex-direction: column;
       align-items: center;
     }
@@ -47,7 +47,7 @@
 
   &__item:not(:last-child) {
     margin-right: 34px;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       margin-right: 0;
       margin-bottom: 27px;
     }
@@ -65,7 +65,7 @@
       border-bottom: 1px solid $blue-dark;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       @include font(14px, 17px);
     }
   }
@@ -73,12 +73,12 @@
 
 .basement {
   padding-top: 45px;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
   &_mobile{
     display: none;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       display: flex;
       flex-direction: column;
       padding-top: 42px;
@@ -99,7 +99,7 @@
     @include font(14px, 24px);
     color: $blue-dark;
     opacity: 0.8;
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 23px;
     }
   }
@@ -111,7 +111,7 @@
     align-items: center;
     &_mobile{
       display: none;
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: $tablet) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,7 +123,7 @@
   &__contact {
     &:not(:last-child){
       margin-right: 36px;
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: $tablet) {
         margin-right: 0;
         margin-bottom: 24px;
       }

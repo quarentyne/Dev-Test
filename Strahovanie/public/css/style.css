@@ -2102,7 +2102,7 @@ body {
   margin-top: -2px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .footer {
     padding-top: 50px;
     padding-bottom: 54px;
