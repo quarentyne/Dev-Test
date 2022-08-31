@@ -1001,7 +1001,7 @@ body {
 }
 
 .advantages {
-  background-color: #F1F8FE;
+  background-color: #F9FBFF;
   padding: 50px 0 90px;
 }
 
@@ -1066,21 +1066,26 @@ body {
 }
 
 .samples {
-  padding: 90px 0 107px;
+  padding: 93px 0 40px;
 }
 
 .samples__header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .samples__sort {
   max-width: 392px;
+  max-height: 46px;
   margin: 0 auto 40px;
 }
 
 .samples__sort > li {
   width: 50%;
+}
+
+.samples__sort > li button > span {
+  font-weight: 600;
 }
 
 .samples__nav {
