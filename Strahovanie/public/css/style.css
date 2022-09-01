@@ -1135,6 +1135,13 @@ body {
   padding: 60px 0;
 }
 
+.greencard__wrapper {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  max-width: 1270px;
+}
+
 .greencard__header {
   padding: 31px 41px;
   color: #001237;
@@ -1191,13 +1198,6 @@ body {
   fill: #FFFFFF;
 }
 
-.offer__wrapper {
-  margin: 0 auto;
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  max-width: 1270px;
-}
-
 .options__header {
   font-family: "Proxima Nova";
   font-weight: normal;
@@ -1220,6 +1220,13 @@ body {
 
 .offer {
   padding: 44px 0;
+}
+
+.offer__wrapper {
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  max-width: 1270px;
 }
 
 .offer__content {
@@ -2271,6 +2278,10 @@ body {
     padding: 31px 0;
   }
 
+  .greencard__wrapper {
+    padding: 24px;
+  }
+
   .greencard__header {
     padding: 0px;
     padding-bottom: 26px;
@@ -2307,7 +2318,60 @@ body {
     padding: 15px 45px;
   }
 
-  .offer__wrapper {
-    padding: 24px;
+  .offer {
+    padding: 37px 0;
+  }
+
+  .offer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .offer__sense {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .offer__text {
+    line-height: 20px;
+  }
+
+  .offer__header {
+    font-size: 26px;
+    line-height: 0.8461538462;
+  }
+
+  .sorting__item {
+    padding: 12px;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 0;
+    width: 109px;
+  }
+
+  .sorting__item > button > span {
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .sorting__item_active {
+    min-width: 0;
+    width: 109px;
   }
 }

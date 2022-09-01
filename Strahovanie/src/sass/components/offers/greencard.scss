@@ -4,6 +4,17 @@
   @media screen and (max-width: $tablet) {
     padding: 31px 0;
   }
+  
+  &__wrapper {
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 10px;
+    max-width: 1270px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 24px;
+    }
+  }
 
   &__header {
     padding: 31px 41px;
@@ -71,18 +82,6 @@
   }
 }
 
-.offer {
-
-  &__wrapper {
-    margin: 0 auto;
-    background-color: $white;
-    border-radius: 10px;
-    max-width: 1270px;
-    @media screen and (max-width: $tablet) {
-      padding: 24px;
-    }
-  }
-}
 
 .options {
 

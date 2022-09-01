@@ -1,10 +1,31 @@
 .offer {
   padding: 44px 0;
 
+  &__wrapper{
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 10px;
+    max-width: 1270px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 37px 0;
+  }
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__sense {
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
   }
   
   &__text {
@@ -14,6 +35,9 @@
     color: $blue-dark;
     margin-bottom: 25px;
     margin-top: -5px;
+    @media screen and (max-width: $tablet) {
+      line-height: 20px;
+    }
   }
 
   &__header {
@@ -22,9 +46,11 @@
     @include font(30px, 22px);
     color: $blue-dark;
     padding-bottom: 5px;
+    @media screen and (max-width: $tablet) {
+      @include font(26px, 22px);
+    }
   }
 }
-
 .sorting {
   border-radius: 6px;
   display: flex;
@@ -38,6 +64,15 @@
     &:not(:last-child) {
       border-right: 1px solid #D7E1E9;
     }
+    @media screen and (max-width: $tablet) {
+      padding: 12px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 0;
+      width: 109px;
+    }
     >button{
       border: none;
       background-color: transparent; 
@@ -48,6 +83,9 @@
         @include font(16px, 19px);
         color: #7E8595;
         cursor: pointer;
+        @media screen and (max-width: $tablet) {
+          @include font(12px, 12px);
+        }
       }
     }
     &:hover>button>span{
@@ -63,5 +101,9 @@
         color: $blue-dark;
       }
     }
+  @media screen and (max-width: $tablet) {
+    min-width: 0;
+    width: 109px;
+  }
   }
 }
