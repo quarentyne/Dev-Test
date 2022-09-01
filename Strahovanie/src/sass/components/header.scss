@@ -1,5 +1,13 @@
 .header {
   border-bottom: 1px solid #D7E1E9;
+  position: relative;
+
+  &__hamburger{
+    display: none;
+    @media screen and (max-width: $tablet) {
+      display: block;
+    }
+  }
 
   &__inner {
     display: flex;
@@ -10,6 +18,10 @@
 
   &__nav {
     margin-left: 80px;
+    @media screen and (max-width: $tablet) {
+      margin-left: 0;
+    }
+
   }
 
   &__btn {
@@ -21,19 +33,59 @@
       background-color: $blue-active;
       border-color: $blue-active;
     }
+    @media screen and (max-width: $tablet) {
+      padding: 9px 15px;
+      >span{
+        @include font(12px, 12px);
+        
+        // letter-spacing: 0.08em;
+      }
+      // max-width: 164px;
+      // max-height: 36px;
+    }
+  }
+
+  &__logo{
+    @media screen and (max-width: $tablet) {
+      width: 97px;
+      height: 30px;
+    }
   }
 }
 
 .nav {
+  @media screen and (max-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    transition: left ease 0.2s;
+    background-color: $white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_show {
+      left: 0;
+    }
+  }  
 
   &__list {
     display: flex;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item {
     margin-top: 5px;
     display: flex;
     &:not(:last-child){
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
       margin-right: 39px;
     }
     
@@ -56,5 +108,16 @@
         bottom: -2px;
       }
     }    
+  }
+}
+.menu{
+  &__close {
+    display: none;
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: block;
+    }
   }
 }

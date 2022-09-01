@@ -27,6 +27,9 @@ body{
   margin:  0 auto;
   padding: 0 15px;
   overflow: hidden;
+  @media screen and (max-width: $tablet) {
+    padding: 0 16px;
+  }
 }
 
 .heading {
