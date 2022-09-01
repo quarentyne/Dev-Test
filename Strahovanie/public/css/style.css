@@ -2266,4 +2266,48 @@ body {
     margin-right: 0;
     margin-bottom: 24px;
   }
+
+  .greencard {
+    padding: 31px 0;
+  }
+
+  .greencard__header {
+    padding: 0px;
+    padding-bottom: 26px;
+    font-size: 32px;
+    line-height: 1.09375;
+  }
+
+  .greencard__content {
+    padding: 0;
+    padding-top: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  .greencard__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .greencard__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .greencard__button {
+    margin-top: 22px;
+    padding: 15px 45px;
+  }
+
+  .offer__wrapper {
+    padding: 24px;
+  }
 }
