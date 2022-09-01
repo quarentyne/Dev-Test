@@ -1,112 +1,244 @@
-.proposals {
-  padding: 50px 0;
-  background-color: $blue-pale;
+// .proposals {
+//   padding: 50px 0;
+//   background-color: $blue-pale;
 
-  &__wrapper {
-    margin: 30px auto;
-    position: relative;
-    &::before{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      content: '';
-      box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
-      top: 0;
-      left: 0;
+//   &__wrapper {
+//     margin: 30px auto;
+//     position: relative;
+//     &::before{
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       content: '';
+//       box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
+//       top: 0;
+//       left: 0;
+//     }
+//   }
+
+//   &__item:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+
+// }
+
+// .proposal {
+//   position: relative;
+//   z-index: 10;
+//   display: flex;
+//   align-items: center;
+//   padding: 38px 0;
+//   margin-left: 54px;
+//   margin-right: 38px;
+//   justify-content: space-between;
+//   height: 120px;
+
+//   &__vuso {
+//     width: 131px;
+//     height: 32px;
+//     background: url("../img/offers/vuso.svg") no-repeat;
+//   }
+
+//   &__upsk{
+//     width: 131px;
+//     height: 29px;
+//     background: url("../img/offers/upsk.svg") no-repeat;
+//     margin-top: -3px;
+//   }
+
+//   &__asko {
+//     width: 131px;
+//     height: 34px;
+//     background: url("../img/offers/asko.svg") no-repeat;
+//     margin-top: -4px;
+//   }
+//   &__oranta {
+//     width: 121px;
+//     height: 45px;
+//     background: url("../img/offers/oranta.svg") no-repeat;
+//     margin-top: -20px;
+//   }
+// }
+
+
+
+// .characteristic {
+//   display: flex;
+//   align-items: center;
+//   margin-top: -4px;
+//   @media screen and (max-width: $tablet) {
+//     flex-wrap: wrap;
+//   }
+
+
+//   &__item {
+//     &:not(:last-child){
+//       margin-right: 72px;
+//     }
+//     &.characteristic__price{
+//       margin-right: 78px;
+//     }
+//   }
+
+//   &__stars {
+//     display: flex;
+//     align-items: center;
+//     margin-top: -2px;
+//   }
+
+//   &__star {
+//     &:not(:last-child) {
+//       margin-right: 4px;
+//     }
+//   }
+
+//   &__name {
+//     font-family: $font-main;
+//     font-weight: normal;
+//     @include font(16px, 19.49px);
+//     color: $gray-blue;
+//     padding-right: 10px;
+//   }
+
+//   &__sum {
+//   font-family: $font-main;
+//   font-weight: normal;
+//   @include font(18px, 22px);
+//   color: $gray-blue;
+//   }
+
+//   &__price {
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     font-family: $font-main;
+//     font-weight: 700;
+//     @include font(18px, 22px);
+//     color: $gray-blue;
+
+//     &_old {
+//       position: absolute;
+//       bottom: -25px;
+//       color: rgba(38, 50, 56, 0.5);
+//       &::after{
+//         content: '';
+//         position: absolute;
+//         width: 81px;
+//         height: 1px;
+//         background-color: #AEAEAE;
+//         transform: rotate(-8.24deg);
+//         bottom: 45%;
+//         left: -2px;
+//       }
+//     }
+//   }
+
+//   &__button {
+//     border: none;
+//     background-color: $orange;
+//     padding: 14px 44px 14px 46px;
+//     margin-top: 1px;
+//     >span{
+//       color: $white;
+//       @include font(14px, 14px);      
+//     }
+//     &:hover{
+//       background-color: $orange-active;
+//     }
+//   }
+// }
+.proposals {
+  background-color: $blue-pale;
+  position: relative;
+  z-index: 0;
+  padding: 30px 0;
+
+  &__item{
+    &:first-child{
+      padding-top: 50px;
+    }
+    &:last-child{
+      padding-bottom: 50px;
+    } 
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
+  &__wrapper {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
   }
-
 }
 
 .proposal {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  align-items: center;
+  max-height: 120px;
   padding: 38px 0;
   margin-left: 54px;
   margin-right: 38px;
-  justify-content: space-between;
-  height: 120px;
+  display: grid;
+  grid-template-areas: 'proposal__logo proposal__stars proposal__name proposal__sum proposal__price proposal__button';
+  grid-template-columns: 21.5% 14% 24% 12% 1fr 1.01fr;
 
   &__vuso {
-    width: 131px;
-    height: 32px;
-    background: url("../img/offers/vuso.svg") no-repeat;
-  }
-
-  &__upsk{
-    width: 131px;
-    height: 29px;
-    background: url("../img/offers/upsk.svg") no-repeat;
-    margin-top: -3px;
-  }
-
-  &__asko {
-    width: 131px;
-    height: 34px;
-    background: url("../img/offers/asko.svg") no-repeat;
-    margin-top: -4px;
-  }
-  &__oranta {
-    width: 121px;
-    height: 45px;
-    background: url("../img/offers/oranta.svg") no-repeat;
-    margin-top: -20px;
-  }
-}
-
-
-
-.characteristic {
-  display: flex;
-  align-items: center;
-  margin-top: -4px;
-
-
-  &__item {
-    &:not(:last-child){
-      margin-right: 72px;
+      width: 131px;
+      height: 32px;
+      background: url("../img/offers/vuso.svg") no-repeat;
+      margin-top: 7px;
     }
-    &.characteristic__price{
-      margin-right: 78px;
+
+    &__upsk{
+      width: 131px;
+      height: 29px;
+      background: url("../img/offers/upsk.svg") no-repeat;
+      margin-top: 5px;
     }
-  }
+
+    &__asko {
+      width: 131px;
+      height: 34px;
+      background: url("../img/offers/asko.svg") no-repeat;
+      margin-top: 4px;
+    }
+    &__oranta {
+      width: 121px;
+      height: 45px;
+      background: url("../img/offers/oranta.svg") no-repeat;
+      margin-top: -10px;
+    }
 
   &__stars {
+    margin-top: -5px;
     display: flex;
+    width: 95px;
+    justify-content: space-between;
     align-items: center;
-    margin-top: -2px;
-  }
-
-  &__star {
-    &:not(:last-child) {
-      margin-right: 4px;
-    }
   }
 
   &__name {
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
     font-family: $font-main;
-    font-weight: normal;
-    @include font(16px, 19.49px);
+    @include font(16px, 19px);
     color: $gray-blue;
-    padding-right: 10px;
   }
 
   &__sum {
-  font-family: $font-main;
-  font-weight: normal;
-  @include font(18px, 22px);
-  color: $gray-blue;
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    font-family: $font-main;
+    @include font(18px, 22px);
+    color: $gray-blue;
   }
 
   &__price {
+    margin-top: -5px;
+    margin-left: 8px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     position: relative;
     font-family: $font-main;
     font-weight: 700;
@@ -115,7 +247,8 @@
 
     &_old {
       position: absolute;
-      bottom: -25px;
+      left: 0;
+      bottom: -11px;
       color: rgba(38, 50, 56, 0.5);
       &::after{
         content: '';
@@ -134,10 +267,10 @@
     border: none;
     background-color: $orange;
     padding: 14px 44px 14px 46px;
-    margin-top: 1px;
     >span{
       color: $white;
-      @include font(14px, 14px);      
+      @include font(14px, 14px);     
+      letter-spacing: 0.08em;
     }
     &:hover{
       background-color: $orange-active;
