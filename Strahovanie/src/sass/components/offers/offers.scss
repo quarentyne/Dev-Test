@@ -1,5 +1,8 @@
 .offer {
   padding: 44px 0;
+  @media screen and (max-width: $tablet) {
+    padding: 36px 0 38px;
+  }
 
   &__wrapper{
     margin: 0 auto;
@@ -8,15 +11,14 @@
     max-width: 1270px;
   }
 
-  @media screen and (max-width: $tablet) {
-    padding: 37px 0;
-  }
+  
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: $tablet) {
       flex-direction: column;
+      max-height: 328px;
     }
   }
 
@@ -37,6 +39,8 @@
     margin-top: -5px;
     @media screen and (max-width: $tablet) {
       line-height: 20px;
+      margin-top: 0;
+      margin-bottom: 15px;
     }
   }
 
@@ -48,6 +52,7 @@
     padding-bottom: 5px;
     @media screen and (max-width: $tablet) {
       @include font(26px, 22px);
+      margin-bottom: 5px;
     }
   }
 }
@@ -84,7 +89,9 @@
         color: #7E8595;
         cursor: pointer;
         @media screen and (max-width: $tablet) {
+          display: inline-block;
           @include font(12px, 12px);
+          max-height: 46px;
         }
       }
     }

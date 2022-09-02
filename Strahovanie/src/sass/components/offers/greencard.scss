@@ -12,7 +12,7 @@
     max-width: 1270px;
 
     @media screen and (max-width: $tablet) {
-      padding: 24px;
+      padding: 24px 24px 36px;
     }
   }
 
@@ -22,7 +22,7 @@
     margin-top: 2px;
     @media screen and (max-width: $tablet) {
       padding: 0px;
-      padding-bottom: 26px;
+      padding-bottom: 24px;
       @include font(32px, 35px);
     }
   }
@@ -35,7 +35,7 @@
     border-top: 1px solid #CFDAE2;
     @media screen and (max-width: $tablet) {
       padding: 0;
-      padding-top: 24px;
+      padding-top: 26px;
       flex-direction: column;
       align-items: baseline;
     }
@@ -53,7 +53,12 @@
       margin-right: 120px;
       @media screen and (max-width: $tablet) {
         margin-right: 0;
-        margin-bottom: 18px;
+        margin-bottom: 17px;
+      }
+    }
+    @media screen and (max-width: $tablet) {
+      &:last-child{
+        margin-top: 7px;
       }
     }
   }
@@ -76,7 +81,7 @@
       }
     }
     @media screen and (max-width: $tablet) {
-      margin-top: 22px;
+      margin-top: 26px;
       padding: 15px 45px;
     }
   }
@@ -84,6 +89,8 @@
 
 
 .options {
+  @media screen and (max-width: $tablet) {
+  }
 
   &__header {
     font-family: $font-main;
@@ -92,6 +99,7 @@
     color: $gray-blue;
     display: flex;
     margin-bottom: 2px;
+    
   }
 
   &__value {
