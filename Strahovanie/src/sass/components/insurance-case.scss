@@ -1,5 +1,8 @@
 .insurance {
   padding: 100px 0px 80px 0;
+  @media screen and (max-width: $tablet) {
+    padding: 60px 0;
+  }
 
   &__container{
     overflow: visible;
@@ -11,16 +14,44 @@
     filter: drop-shadow(0px 4px 46px rgba(123, 139, 181, 0.22));
     display: flex;
     max-height: 520px;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column-reverse;
+      max-height: 605px;
+    }
   }
 
   &__image {
     background: url('../icons/Intersect.svg') no-repeat;
     background-position: 72% 40%;
     align-self: flex-end;
+    @media screen and (max-width: $tablet) {
+      position: relative;
+      background: none;
+      align-self: flex-start;
+      &::after{
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        background: url('../icons/Intersect.svg') no-repeat;
+        top: 70px;
+        left: -55px;
+        transform: rotate(90deg);
+        background-size: 100%;
+      }
+      & img{
+        width: 284px;
+        height: 201px;
+      }
+    }
   }
 
   &__content {
     padding: 75px 0;
+    @media screen and (max-width: $tablet) {
+      padding: 40px 0 10px;
+      max-width: 280px;
+    }
   }
 }
 
@@ -30,23 +61,39 @@
   max-width: 710px;
   margin-left: 12px;
   align-items: flex-start;
+  @media screen and (max-width: $tablet) {
+    margin-left: 0;
+    align-self: center;
+  }
 
   &__header {
     margin-bottom: 32px;    
     color: $white;
     margin-top: 5px;
+    @media screen and (max-width: $tablet) {
+      @include font(26px, 26px);
+    }
   }
 
   &__list {
     margin-bottom: 50px;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 32px;
+    }
   }
 
   &__item {
     margin-left: 5px;
     padding-left: 42px;
     background: url('../icons/shield.svg') no-repeat;
+    @media screen and (max-width: $tablet) {
+      background-position: left 20%;
+    }
     &:not(:last-child){
       margin-bottom: 20px;
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -55,6 +102,9 @@
     font-family: $font-main;
     font-weight: 400;
     @include font(24px, 24px);
+    @media screen and (max-width: $tablet) {
+      @include font(18px, 22px);
+    }
   }
 
   &__button {
@@ -69,6 +119,16 @@
     padding: 27px 70px;
     &:hover{
       background-color: $blue-active;
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include font(12px, 12px);
+      width: 280px;
+      height: 52px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
