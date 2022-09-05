@@ -954,7 +954,7 @@ body {
 }
 
 .description {
-  padding-bottom: 90px;
+  padding-bottom: 125px;
 }
 
 .description__container {
@@ -975,16 +975,26 @@ body {
   left: 0;
 }
 
+.description__wrapper {
+  position: relative;
+}
+
 .description__header {
   font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2222222222;
   color: #001237;
-  margin-bottom: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 97%;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .description__content {
+  margin-top: 20px;
   max-width: 1274px;
   max-height: 235px;
   overflow-y: scroll;
@@ -1014,6 +1024,10 @@ body {
   font-size: 16px;
   line-height: 1.4375;
   opacity: 0.8;
+}
+
+.description__text:first-child {
+  padding-top: 40px;
 }
 
 .description__text:not(:last-child) {
@@ -2553,6 +2567,33 @@ body {
   .answer__item > span {
     font-size: 15px;
     line-height: 1.2;
+  }
+
+  .description {
+    padding-bottom: 50px;
+  }
+
+  .description__container::after {
+    width: 92%;
+    height: 41px;
+  }
+
+  .description__header {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .description__content {
+    margin-top: 24px;
+    max-height: 185px;
+  }
+
+  .description__text {
+    margin-right: 20px;
+  }
+
+  .description__text:first-child {
+    padding-top: 10px;
   }
 
   .greencard {

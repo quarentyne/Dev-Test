@@ -1,5 +1,8 @@
 .description {
-  padding-bottom: 90px;
+  padding-bottom: 125px;
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 50px;
+  }
 
   &__container {
     padding-right: 10px;
@@ -13,7 +16,15 @@
       background: linear-gradient(360deg, #FFFFFF 28.73%, rgba(255, 255, 255, 0) 100%);
       bottom: 0;
       left: 0;
+      @media screen and (max-width: $tablet) {
+        width: 92%;
+        height: 41px;
+      }
     }
+  }
+
+  &__wrapper{
+    position: relative;
   }
 
   &__header {
@@ -21,14 +32,27 @@
     font-weight: 700;
     @include font(36px, 44px);
     color: $blue-dark;
-    margin-bottom: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 97%;
+    background-color: #fff;
+    z-index: 10;
+    @media screen and (max-width: $tablet) {
+      @include font(20px, 24px);
+    }
   }
 
   &__content {
+    margin-top: 20px;
     max-width: 1274px;
     max-height: 235px;
     overflow-y: scroll;
     position: relative;
+    @media screen and (max-width: $tablet) {
+      margin-top: 24px;
+      max-height: 185px;
+    }
 
     &::-webkit-scrollbar {
       width: 10px;
@@ -47,6 +71,9 @@
   }
 
   &__text {
+    &:first-child{
+      padding-top: 40px;
+    }
     margin-right: 25px;
     color: $gray-blue;
     font-family: $font-main;
@@ -56,5 +83,12 @@
     &:not(:last-child){
       margin-bottom: 25px;
     }
-  }
+    @media screen and (max-width: $tablet) {
+      margin-right: 20px;
+      &:first-child {
+        padding-top: 10px;
+      }
+    }
+  } 
+  
 }
