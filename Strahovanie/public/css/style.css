@@ -909,7 +909,7 @@ body {
 }
 
 .answer {
-  padding: 35px 0 40px 40px;
+  padding: 35px 0 39px 40px;
   display: none;
 }
 
@@ -2507,6 +2507,52 @@ body {
 
   .review__card {
     padding: 27px 22px 44px 18px;
+  }
+
+  .faq__header {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .accordeon__wrapper.active::after {
+    display: none;
+  }
+
+  .accordeon__trigger {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    padding: 17px 16px;
+  }
+
+  .trigger__text {
+    max-width: 85%;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .answer {
+    padding: 24px 16px 18px;
+    border-bottom: 1px solid #D7E1E9;
+  }
+
+  .answer__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    margin-bottom: 16px;
+  }
+
+  .answer__item::before {
+    width: 14px;
+    height: 14px;
+  }
+
+  .answer__item > span {
+    font-size: 15px;
+    line-height: 1.2;
   }
 
   .greencard {

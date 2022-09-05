@@ -10,7 +10,6 @@ const confidenceSlider = new Swiper('.confirence__swiper', {
   breakpoints: {
     768: {
       slidesPerView: 3,
-      // spaceBetween: 768,
     },
   },
 });
