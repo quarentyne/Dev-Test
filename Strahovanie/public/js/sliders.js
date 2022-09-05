@@ -1,12 +1,18 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
 const confidenceSlider = new Swiper('.confirence__swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 45,
   navigation: {
     nextEl: '.confirence__next',
     prevEl: '.confirence__prev',
-  }
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      // spaceBetween: 768,
+    },
+  },
 });
 
 const samplesSlider = new Swiper('.samples__slider', {

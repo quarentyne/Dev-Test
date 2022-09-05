@@ -1,10 +1,15 @@
 .confirence {
-
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 40px;
+  }
   &__swiper {
     max-width: 1210px;
-    padding: 40px 35px 0px 47px;
+    padding: 40px 35px 50px 47px;
     padding-top: 40px;
     overflow: hidden;
+    @media screen and (max-width: $tablet) {
+      padding: 30px 0px 18px 0px;
+    }
   }
 
   &__container{
@@ -15,12 +20,19 @@
   &__navigation {
     width: 320px;
     padding-top: 40px;
+    @media screen and (max-width: $tablet) {
+      padding-top: 0;
+    }
   }
 
   &__header {
     color: $blue-dark;
     margin-bottom: 106px;
     line-height: 56px;
+    @media screen and (max-width: $tablet) {
+      @include font(26px, 26px);
+      margin-bottom: 0;
+    }
   }
 
   &__nav {
@@ -29,12 +41,22 @@
     width: 100%;
     justify-content: space-between;
     margin-left: 2px;
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 50px 0px;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      padding: 60px 0;
+      position: relative;
+    }
   }
 }
 
@@ -56,9 +78,17 @@
   height: 320px;
   box-shadow: 0px 4px 46px rgba(123, 139, 181, 0.22);
   border-radius: 10px;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    max-width: 360px;
+    height: 322px;
+  }
 
   &__card {
     padding: 27px 30px 44px 26px;
+    @media screen and (max-width: $tablet) {
+      padding: 27px 22px 44px 18px;
+    }
   }
 
   &__rating {

@@ -479,7 +479,7 @@ body {
   --swiper-theme-color: #4268B2;
 }
 
-.swiper-slide {
+.swiper-slide_padding {
   padding-bottom: 50px;
 }
 
@@ -664,7 +664,7 @@ body {
 
 .confirence__swiper {
   max-width: 1210px;
-  padding: 40px 35px 0px 47px;
+  padding: 40px 35px 50px 47px;
   padding-top: 40px;
   overflow: hidden;
 }
@@ -2464,6 +2464,49 @@ body {
     font-size: 16px;
     line-height: 1.375;
     opacity: 0.7;
+  }
+
+  .confirence {
+    padding-bottom: 40px;
+  }
+
+  .confirence__swiper {
+    padding: 30px 0px 18px 0px;
+  }
+
+  .confirence__navigation {
+    padding-top: 0;
+  }
+
+  .confirence__header {
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .confirence__nav {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+  }
+
+  .confirence__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 60px 0;
+    position: relative;
+  }
+
+  .review {
+    width: 100%;
+    max-width: 360px;
+    height: 322px;
+  }
+
+  .review__card {
+    padding: 27px 22px 44px 18px;
   }
 
   .greencard {
