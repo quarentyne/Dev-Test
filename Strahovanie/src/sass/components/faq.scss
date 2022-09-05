@@ -29,8 +29,11 @@
     &.active {
       background-color: #F8FBFE;
       @media screen and (max-width: $tablet) {
-        &::after{
-          display: none;
+        >.trigger {
+          padding: 26px 16px;
+        }
+        &::after{          
+          display: none;          
         }
       }
       &::after {
@@ -63,7 +66,7 @@
     padding: 32px 40px;
     max-height: 96px;
     @media screen and (max-width: $tablet) {
-      max-height: max-content;
+      max-height:fit-content;
       padding: 17px 16px;
     }
   }
@@ -109,7 +112,7 @@
   padding: 35px 0 39px 40px;
   display: none;
   @media screen and (max-width: $tablet) {
-    padding: 24px 16px 18px;
+    padding: 23px 16px 18px;
     border-bottom: 1px solid #D7E1E9;
   }
 
@@ -123,7 +126,7 @@
     margin-bottom: 23px;
     @media screen and (max-width: $tablet) {
       @include font(14px, 24px);
-      margin-bottom: 16px;
+      margin-bottom: 13px;
     }
   }
 
@@ -151,9 +154,12 @@
       color: $gray-blue;
     }
     @media screen and (max-width: $tablet) {
+      padding-left: 26px;
       &::before{
         width: 14px;
         height: 14px;
+        top: 6%;
+        border-width: 3px;
       }
       >span{
         @include font(15px, 18px);

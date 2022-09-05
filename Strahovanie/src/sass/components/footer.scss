@@ -19,11 +19,11 @@
   &__logotype {
     margin-bottom: 60px;
     @media screen and (max-width: $tablet) {
-      >img{
+      >a>img{
         width: 185px;
         height: 41px;
       }      
-      margin-bottom: 44x;
+      margin-bottom: 44px;
     }
   }
 
