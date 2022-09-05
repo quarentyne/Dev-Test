@@ -23,6 +23,7 @@ const menu = document.querySelector('.switch__menu');
 const arrangeSlider = new Swiper('.arrange__swiper', {
   slidesPerView: 1,
   navigation: false,
+  spaceBetween: 100,
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",

@@ -8,6 +8,9 @@
   height: 1px;
   left: 0;
   top: 35%;
+  @media screen and (max-width: $tablet) {
+    top: 30%;
+  }
 }
 :root {
   --swiper-theme-color: #4268B2;
@@ -21,12 +24,20 @@
   background-color: #F8FBFE;
   padding: 90px 0 50px 0;
   position: relative;
+  @media screen and (max-width: $tablet) {
+    border-color: $blue-pale;
+    padding: 60px 0 10px 0;
+  }
 
   &__header {
     text-align: center;
     color: $blue-dark;
     margin-bottom: 75px;
-    @include font(46px, 56px)
+    @include font(46px, 56px);
+    @media screen and (max-width: $tablet) {
+      @include font(26px, 26px);
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -39,6 +50,9 @@
 
 .switch {
   margin-bottom: 80px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 12px;
+  }
 
   &__menu {
     position: relative;
@@ -89,6 +103,15 @@
     position: relative;
     z-index: 10;
     margin-bottom: 22px;
+    @media screen and (max-width: $tablet) {
+      width: 34px;
+      height: 34px;
+      @include font(18px, 27px);
+      &::after{
+        width: 44px;
+        height: 44px;
+      }
+    }
     &::after{
       content: '';
       position: absolute;
@@ -113,6 +136,9 @@
     font-weight: 600;
     @include font(16px, 26px);
     bottom: -25px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -124,6 +150,9 @@
   max-width: 1050px;
   height: 242px;
   background-color: $white;
+  @media screen and (max-width: $tablet) {
+    height: 270px;
+  }
   
 
   &__wrapper {
@@ -131,6 +160,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: $tablet) {
+      padding: 24px 19px 50px 18px;
+    }
   }
 
   &__img{
@@ -142,11 +174,17 @@
     padding-left: 90px;
     padding-bottom: 40px;
     margin-top: 8px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__content {
     margin-top: -12px;
     max-width: 570px;
+    @media screen and (max-width: $tablet) {
+      margin-top: 0;
+    }
   }
 
   &__header {
@@ -155,6 +193,10 @@
     @include font(30px, 39px);
     color: $blue-dark;
     margin-bottom: 17px;
+    @media screen and (max-width: $tablet) {
+      @include font(20px, 26px);
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
@@ -163,5 +205,9 @@
     font-weight: normal;
     @include font(16px, 27px);
     opacity: 0.8;
+    @media screen and (max-width: $tablet) {
+      @include font(16px, 22px);
+      opacity: 0.7;
+    }
   }
 }
