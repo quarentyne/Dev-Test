@@ -21,6 +21,9 @@
 
   &__nav {
     margin-left: 80px;
+    @media screen and (max-width: $laptop) {
+      margin-left: 20px;
+    }
     @media screen and (max-width: $tablet) {
       margin-left: 0;
     }
@@ -35,6 +38,9 @@
     &:hover{
       background-color: $blue-active;
       border-color: $blue-active;
+    }
+    @media screen and (max-width: $laptop) {
+      padding: 12px 20px;
     }
     @media screen and (max-width: $tablet) {
       padding: 9px 15px;
@@ -66,6 +72,7 @@
     align-items: center;
     &_show {
       left: 0;
+      z-index: 10;
     }
   }  
 
@@ -81,6 +88,9 @@
     margin-top: 5px;
     display: flex;
     &:not(:last-child){
+      @media screen and (max-width: $laptop) {
+        margin-right: 20px;
+      }
       @media screen and (max-width: $tablet) {
         margin-bottom: 10px;
         margin-right: 0;

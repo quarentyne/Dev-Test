@@ -1,8 +1,26 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
+const confidenceSlider = new Swiper('.confirence__swiper', {
+  slidesPerView: 3,
+  spaceBetween: 45,
+  navigation: {
+    nextEl: '.confirence__next',
+    prevEl: '.confirence__prev',
+  }
+});
+
+const samplesSlider = new Swiper('.samples__slider', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.samples__next',
+    prevEl: '.samples__prev',
+  }
+});
+
 const menu = document.querySelector('.switch__menu');
 
-const arrange = new Swiper('.arrange__swiper', {
+const arrangeSlider = new Swiper('.arrange__swiper', {
   slidesPerView: 1,
   navigation: false,
   pagination: {
@@ -28,14 +46,14 @@ function swiperMenuChanger(options) {
 
 
 menu.addEventListener('click', swiperMenuChanger.bind(menu, {
-  slider: arrange,
+  slider: arrangeSlider,
   menu: menu,
   menuItemSelector: '.switch__item',
   menuItemSelectorActive: 'switch__item_active',
 }));
 
-arrange.on('slideChange', swiperMenuChanger.bind(menu, {
-  slider: arrange,
+arrangeSlider.on('slideChange', swiperMenuChanger.bind(menu, {
+  slider: arrangeSlider,
   menu: menu,
   menuItemSelector: '.switch__item',
   menuItemSelectorActive: 'switch__item_active',
