@@ -2156,6 +2156,7 @@ body {
 
 .another {
   display: none;
+  padding-bottom: 50px;
 }
 
 .another__header {
@@ -2670,6 +2671,42 @@ body {
 
   .description__text:first-child {
     padding-top: 10px;
+  }
+
+  .advantages {
+    padding-bottom: 0;
+  }
+
+  .advantages__header {
+    font-size: 26px;
+    line-height: 1;
+    color: #001237;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .benefits__item {
+    width: 100%;
+  }
+
+  .benefits__wrapper {
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin-right: 21px;
+  }
+
+  .benefits__description {
+    font-size: 20px;
+    line-height: 1;
   }
 
   .greencard {
