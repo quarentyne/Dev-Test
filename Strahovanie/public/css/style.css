@@ -1865,6 +1865,7 @@ body {
   line-height: 1;
   text-align: center;
   margin-bottom: 40px;
+  color: #001237;
 }
 
 .touristic__input {
@@ -2151,6 +2152,67 @@ body {
   line-height: 1;
   color: #001237;
   margin-top: -2px;
+}
+
+.another {
+  display: none;
+}
+
+.another__header {
+  color: #001237;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.another__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.another__item {
+  width: 100%;
+  background-color: #EBF0FB;
+  border-radius: 6px;
+  max-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.another__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.another__link {
+  display: inline-block;
+  color: #2155CF;
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  padding: 18px 23px 16px;
+  padding-right: 23px;
+  margin-right: 23px;
+  text-transform: uppercase;
+  background: url("../icons/link.svg") no-repeat;
+  background-position: 100% 45%;
 }
 
 @media screen and (max-width: 1275px) {
@@ -2967,5 +3029,136 @@ body {
 
   .belay__gradient {
     height: 109px;
+  }
+
+  .tourism {
+    background-color: #FFFFFF;
+  }
+
+  .tourism__container {
+    padding: 31px 0 50px;
+  }
+
+  .tourism__form {
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .touristic {
+    padding: 0;
+  }
+
+  .touristic__header {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 33px;
+  }
+
+  .touristic__trip {
+    margin-bottom: 24px;
+  }
+
+  .touristic__tourists {
+    margin-bottom: 24px;
+  }
+
+  .touristic__add {
+    margin-bottom: 40px;
+  }
+
+  .touristic__result {
+    max-width: 100%;
+  }
+
+  .touristic__result > span {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .trip {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .direction {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .direction__ways {
+    margin-top: 10px;
+  }
+
+  .period {
+    width: 100%;
+  }
+
+  .period__total {
+    margin-top: 0;
+  }
+
+  .period__choice > div {
+    width: 156px;
+  }
+
+  .period__input {
+    max-width: 100%;
+    background-position: 92.5% 50%;
+  }
+
+  .period__time {
+    margin-right: 0;
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: -1px;
+  }
+
+  .tourists {
+    width: 100vw;
+    margin-left: -16px;
+  }
+
+  .tourists__header {
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+
+  .tourists__info {
+    max-height: none;
+    padding: 16px 16px 34px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .tourist__number {
+    margin-bottom: 14px;
+  }
+
+  .tourist__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .tourist__birthday {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .tourist__goal {
+    width: 100%;
+  }
+
+  .tourist__target {
+    background-position: 95% 50%;
+  }
+
+  .another {
+    display: block;
   }
 }
