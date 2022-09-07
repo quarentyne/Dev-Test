@@ -15,11 +15,18 @@ const confidenceSlider = new Swiper('.confirence__swiper', {
 });
 
 const samplesSlider = new Swiper('.samples__slider', {
-  slidesPerView: 4,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 16,
   navigation: {
     nextEl: '.samples__next',
     prevEl: '.samples__prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+
+    },
   }
 });
 

@@ -2709,6 +2709,51 @@ body {
     line-height: 1;
   }
 
+  .samples {
+    padding: 72px 0 50px;
+  }
+
+  .samples__header {
+    color: #001237;
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+
+  .samples__sort > li button {
+    padding: 0;
+  }
+
+  .samples__sort > li button > span {
+    font-size: 16px;
+    line-height: 1.1875;
+  }
+
+  .samples__sort {
+    margin-bottom: 24px;
+  }
+
+  .samples__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 98px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 32px auto 0 auto;
+  }
+
+  .sample {
+    width: 156px;
+    height: 154px;
+  }
+
+  .sample > img {
+    width: 88px;
+    height: 120px;
+  }
+
   .greencard {
     padding: 31px 0;
   }
