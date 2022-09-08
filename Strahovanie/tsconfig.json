@@ -4,6 +4,7 @@
     "noImplicitAny": true,
   },
   "files": [
-    "./src/ts/main.ts"
+    "./src/ts/hamburger.ts",
+    "./src/ts/accordeon.ts"
   ],
 }

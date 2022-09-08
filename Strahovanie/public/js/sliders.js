@@ -17,6 +17,7 @@ const confidenceSlider = new Swiper('.confirence__swiper', {
 const samplesSlider = new Swiper('.samples__slider', {
   slidesPerView: 2,
   spaceBetween: 16,
+  slidesPerGroup: 2,
   navigation: {
     nextEl: '.samples__next',
     prevEl: '.samples__prev',
@@ -25,7 +26,6 @@ const samplesSlider = new Swiper('.samples__slider', {
     768: {
       slidesPerView: 4,
       spaceBetween: 30,
-
     },
   }
 });
