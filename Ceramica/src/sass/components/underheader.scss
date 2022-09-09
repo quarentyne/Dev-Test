@@ -1,6 +1,6 @@
 .underheader {
   position: relative;
-  font-family: 'Gotham Pro';
+  font-family: $font-base;
   font-weight: normal;
 
   &__wrapper{
@@ -38,16 +38,22 @@
 
   &__description {
     position: absolute;
-    bottom: 185px;
-    margin-left: 20px;
+    bottom: 187px;
+    margin-left: 15px;
+    width: 856px;
   }
 }
 
 .description {
+  &__name{
+    display: block;
+    margin-bottom: 13px;
+  }
+
   &__title {
     @include font(86px, 87px);
     color: $clear-white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: normal;
 
@@ -76,7 +82,7 @@
 
 .underheader-nav {
   position: absolute;
-  bottom: 60px;
+  bottom: 58px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,11 +90,14 @@
 
   &__scroll {
     cursor: pointer;
+    margin-left: 68px;
+    
   }
 
   &__arrows {
+    margin-top: -2px;
     display: flex;
-    max-width: 144px;
+    max-width: 142px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -109,13 +118,17 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
   top: 362px;
   right: 0;
 
   &__item {
-    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 20px;
   }
 }
 
@@ -128,10 +141,12 @@
 .swiper-pagination-horizontal{
   display: flex;
   align-items: center;
+  margin-bottom: 2px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin-left: 0;
   margin-right: 17px;
 }
 
