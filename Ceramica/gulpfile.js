@@ -99,7 +99,7 @@ const watcher = () => {
   watch('./src/js/**/*.js', javascript);
 };
 
-exports.dev = series(
+exports.default = series(
   clear,
   parallel(html, scss, typescript, javascript, img, font, icons),
   parallel(watcher, server)
