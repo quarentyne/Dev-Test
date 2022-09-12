@@ -954,7 +954,7 @@ body {
 }
 
 .feedback {
-  padding: 120px 0;
+  padding: 120px 0 118px;
 }
 
 .feedback__wrapper {
@@ -1120,8 +1120,8 @@ body {
 
 .footer__main {
   display: grid;
-  grid-template-columns: 0.85fr 2.6fr 1.1fr;
-  padding: 80px 0;
+  grid-template-columns: 0.782fr 2.7fr 1.09fr;
+  padding: 80px 0 78px;
 }
 
 .footer__extra {
@@ -1135,25 +1135,26 @@ body {
 }
 
 .media__logo {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .media__social {
+  width: 132px;
+  height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.media__link:not(:last-child) {
-  margin-right: 32px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr 1fr;
+  grid-template-columns: 0.94fr 0.95fr 1.2fr 0.99fr;
   font-family: "Gotham Pro";
   font-weight: 400;
   color: #FFFFFF;
@@ -1161,19 +1162,19 @@ body {
 
 .navigation__double {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
+  grid-template-rows: 0.8fr 0.56fr;
+  row-gap: 25px;
 }
 
 .navigation__header {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.3888888889;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .navigation__item {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .navigation__link {
@@ -1201,7 +1202,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .catalog__btn > span {
@@ -1227,6 +1228,10 @@ body {
   padding: 18px 19px;
 }
 
+.catalog__btn-transparent > span {
+  margin-right: 25px;
+}
+
 .intelligence {
   display: grid;
   grid-template-columns: 1.75fr 1fr 1fr;
@@ -1238,6 +1243,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.2;
+  margin-top: -2px;
 }
 
 .intelligence__language {
@@ -1247,6 +1253,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: -2px;
 }
 
 .intelligence__element:not(:last-child) {

@@ -3,8 +3,8 @@
 
   &__main {
     display: grid;
-    grid-template-columns: 0.85fr 2.6fr 1.1fr;
-    padding: 80px 0;
+    grid-template-columns: 0.782fr 2.7fr 1.09fr;
+    padding: 80px 0 78px;
   }
 
   &__extra {
@@ -17,40 +17,39 @@
 .media {
 
   &__logo {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   &__social {
+    width: 132px;
+    height: 24px;
     display: flex;
     align-items: center;
-  }
-
-  &__link:not(:last-child) {
-    margin-right: 32px;
+    justify-content: space-between;
   }
 }
 
 .navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr 1fr;
-  font-family: 'Gotham Pro';
+  grid-template-columns: 0.94fr 0.95fr 1.2fr 0.99fr;
+  font-family: $font-base;
   font-weight: 400;
   color: $clear-white;
 
   &__double{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 30px
+    grid-template-rows: 0.8fr 0.56fr;
+    row-gap: 25px
   }
 
   &__header {
-    @include font(18px, 25.2px);
+    @include font(18px, 25px);
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   &__item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   &__link {
@@ -75,9 +74,9 @@
     display: flex;
     width: 100%;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     >span{
-      font-family: 'Gotham Pro';
+      font-family: $font-base;
       font-weight: 400;
       display: inline-block;
       color: $clear-white;
@@ -97,6 +96,9 @@
     border: 1px solid $clear-white;
     background-color: transparent;
     padding: 18px 19px;
+    >span{
+      margin-right: 25px;
+    }
   }
 }
 
@@ -106,14 +108,16 @@
 
   &__copyright {
     color: $clear-white;
-    font-family: "Gotham Pro";
+    font-family: $font-base;
     font-weight: normal;
     @include font(14px, 16.8px);
+    margin-top: -2px;
   }
 
   &__language {
     display: flex;
     align-items: center;
+    margin-top: -2px;
   }
 
   &__element:not(:last-child){
@@ -123,7 +127,7 @@
   &__lang {
     opacity: 0.4;
     color: $clear-white;
-    font-family: "Gotham Pro";
+    font-family: $font-base;
     font-weight: normal;
     @include font(14px, 16.97px);
   }
