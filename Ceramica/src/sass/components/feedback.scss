@@ -2,13 +2,12 @@
   padding: 120px 0;
 
   &__wrapper {
-  height: 863px;
+  height: 893px;
   background: url("../img/questions/questions_1.jpg") no-repeat;
-  background-position: 15px;
+  background-position: 15px 0;
   display: flex;
   justify-content:end;
   align-items: center;
-  // max-width: 1500px;
   }
 
   &__form {
@@ -18,6 +17,7 @@
 
 .form {
   padding: 75px 154px 104px 112px;
+  margin-top: 5px;
   max-width: 735px;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
   }
 
   &__header {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   &__text {
@@ -59,7 +59,7 @@
     padding: 15px 20px ;
     border: 1px solid $light-gray;
     &::placeholder{
-      font-family: 'Gotham Pro';
+      font-family: $font-base;
       font-weight: 300;
       @include font(16px, 22.4px);
       color: #98A4AE;
@@ -68,6 +68,7 @@
   & textarea{
     resize: none;
     height: 100px;
+    margin-bottom: 13px;
   }
 
   &__btn{
@@ -75,17 +76,19 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 30px;
+    padding: 19px 30px;
     background-color: $blue-active;
     border: none;
     cursor: pointer;
     z-index: 10;
     >span{
-      font-family: 'Gotham Pro';
+      font-family: $font-base;
       font-weight: 400;
-      @include font(16px, 22.4px);
+      letter-spacing: 0.05em;
+      @include font(14px, 17px);
       text-transform: uppercase;
       color: $clear-white;
+      text-transform: uppercase;
     }
   }
 }

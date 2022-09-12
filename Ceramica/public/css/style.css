@@ -958,9 +958,9 @@ body {
 }
 
 .feedback__wrapper {
-  height: 863px;
+  height: 893px;
   background: url("../img/questions/questions_1.jpg") no-repeat;
-  background-position: 15px;
+  background-position: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -978,6 +978,7 @@ body {
 
 .form {
   padding: 75px 154px 104px 112px;
+  margin-top: 5px;
   max-width: 735px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,7 +1013,7 @@ body {
 }
 
 .form__header {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .form__text {
@@ -1081,6 +1082,7 @@ body {
 .form textarea {
   resize: none;
   height: 100px;
+  margin-bottom: 13px;
 }
 
 .form__btn {
@@ -1094,7 +1096,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 16px 30px;
+  padding: 19px 30px;
   background-color: #6B97BB;
   border: none;
   cursor: pointer;
@@ -1104,10 +1106,12 @@ body {
 .form__btn > span {
   font-family: "Gotham Pro";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  line-height: 1.2142857143;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .footer {
