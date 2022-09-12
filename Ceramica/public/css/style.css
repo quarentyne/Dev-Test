@@ -867,7 +867,7 @@ body {
   max-width: 858px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
   position: relative;
 }
 
@@ -899,13 +899,14 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-height: 155px;
+  max-height: 157px;
   height: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   font-family: "Gotham Pro";
   font-weight: normal;
+  margin-left: 2px;
 }
 
 .instagram__logo {
@@ -919,6 +920,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 2px;
 }
 
 .instagram__link {
@@ -926,6 +928,8 @@ body {
   line-height: 1.2;
   color: #40474E;
   cursor: default;
+  margin-left: 2px;
+  margin-top: -2px;
 }
 
 .instagram__btn {
@@ -937,6 +941,8 @@ body {
   background-color: #6B97BB;
   border: 1px solid #6B97BB;
   cursor: pointer;
+  display: inline-block;
+  margin-left: 2px;
 }
 
 .instagram__btn > span {

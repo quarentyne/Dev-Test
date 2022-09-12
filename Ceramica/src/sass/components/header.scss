@@ -1,6 +1,6 @@
 .header {
   padding: 4px 0 3px; 
-  font-family: 'Gotham Pro';
+  font-family: $font-base;
   font-weight: normal;
   text-transform: uppercase;
   color: $text-base;
@@ -160,7 +160,7 @@
 
   &__amount {
     position: absolute;
-    font-family: 'Gotham Pro';
+    font-family: $font-base;
     font-weight: 700;
     @include font(8px, 10.4px);
     color: $clear-white;
