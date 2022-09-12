@@ -62,17 +62,9 @@ const projectElements = new Swiper(".project-slider", {
 
 const blogCarousel = new Swiper('.blog__carousel', {
   spaceBetween: 10,
-  slidesPerView: 4.2,
+  slidesPerView: 4.165,
   watchSlidesProgress: true,
   loop: true,
-  breakpoints: {
-    1400: {
-      slidesPerView: 4.2,
-    },
-    340: {
-      slidesPerView: 3,
-    }
-  }
 });
 
 function magnyfying(options) {
