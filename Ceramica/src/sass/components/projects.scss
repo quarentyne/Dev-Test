@@ -1,10 +1,8 @@
 .projects {
   position: relative;
-  padding: 120px 0;
-  font-family: 'Gotham Pro';
+  padding: 119px 0 120px;
+  font-family: $font-base;
   font-weight: normal;
-
-
 
   &__wrapper{
     position: relative;
@@ -18,8 +16,9 @@
   &__arrow{
     background-color: transparent;
     border: 1px solid #98A4AE;
-    width: 54px;
-    height: 54px;
+    padding: 0;
+    width: 52px;
+    height: 52px;
     cursor: pointer;
     &:hover>svg{
       fill: $red-active;
@@ -32,12 +31,13 @@
 
 .cathword {
   margin-bottom: 80px;
-  font-family: 'Gotham Pro';
+  font-family: $font-base;
   color: $text-base;
   &__text {
+    margin-left: -1px;
     font-weight: normal;
     letter-spacing: 0.1em;
-    @include font(20px, 24.24px);
+    @include font(20px, 24px);
     text-transform: uppercase;
     position: relative;
     &::after{
@@ -56,19 +56,20 @@
 .full-slider {
   &__content {
     width: 540px;
-    margin-left: 85px;
+    margin-left: 69px;
     @media screen and (max-width:1400px) {
       margin-left: 0;
     }
   }
   &__project{
     min-width: 0;
+    margin-left: -10px;
   }
 }
 
 .title{
-  font-family: 'Gotham Pro';
-  @include font(44px, 57.2px);
+  font-family: $font-base;
+  @include font(44px, 57px);
   font-weight: normal;
   color: $text-base;
 
@@ -78,8 +79,8 @@
 }
 
 .meaning{
-  font-family: 'Gotham Pro';
-  @include font(18px, 25.2px);
+  font-family: $font-base;
+  @include font(18px, 25px);
   color: $text-base;
   font-weight: 300;
 
@@ -93,24 +94,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 85px;
+    margin-bottom: 84px;
+  }
+
+  &__nav{
+    width: 123px;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__header {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   &__text {
     max-width: 460px;    
     >p:not(:last-child){
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
 
 .btn {
   @include font(14px, 16.2px);
-  font-family: 'Gotham Pro';
+  font-family: $font-base;
   padding: 18px 45px;
   color: $blue-active;
   border: 1px solid $blue-active;

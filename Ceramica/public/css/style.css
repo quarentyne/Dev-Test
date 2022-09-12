@@ -539,7 +539,7 @@ body {
 }
 
 .carousel-wrapper {
-  margin-left: 90%;
+  margin-left: 91%;
   position: relative;
 }
 
@@ -563,7 +563,7 @@ body {
 .project-carousel {
   max-width: 1060px;
   position: absolute;
-  bottom: 60px;
+  bottom: 59px;
   overflow: hidden;
 }
 
@@ -574,7 +574,7 @@ body {
 
 .projects {
   position: relative;
-  padding: 120px 0;
+  padding: 119px 0 120px;
   font-family: "Gotham Pro";
   font-weight: normal;
 }
@@ -599,8 +599,9 @@ body {
 .projects__arrow {
   background-color: transparent;
   border: 1px solid #98A4AE;
-  width: 54px;
-  height: 54px;
+  padding: 0;
+  width: 52px;
+  height: 52px;
   cursor: pointer;
 }
 
@@ -619,10 +620,11 @@ body {
 }
 
 .cathword__text {
+  margin-left: -1px;
   font-weight: normal;
   letter-spacing: 0.1em;
   font-size: 20px;
-  line-height: 1.212;
+  line-height: 1.2;
   text-transform: uppercase;
   position: relative;
 }
@@ -639,17 +641,18 @@ body {
 
 .full-slider__content {
   width: 540px;
-  margin-left: 85px;
+  margin-left: 69px;
 }
 
 .full-slider__project {
   min-width: 0;
+  margin-left: -10px;
 }
 
 .title {
   font-family: "Gotham Pro";
   font-size: 44px;
-  line-height: 1.3;
+  line-height: 1.2954545455;
   font-weight: normal;
   color: #40474E;
 }
@@ -657,7 +660,7 @@ body {
 .meaning {
   font-family: "Gotham Pro";
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.3888888889;
   color: #40474E;
   font-weight: 300;
 }
@@ -672,11 +675,21 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 85px;
+  margin-bottom: 84px;
+}
+
+.sense__nav {
+  width: 123px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .sense__header {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .sense__text {
@@ -684,7 +697,7 @@ body {
 }
 
 .sense__text > p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .btn {
