@@ -28,11 +28,11 @@
   &::before{
     content: '';
     position: absolute;
-    top:4%;
+    top:2%;
     left:4%;
     z-index: 0;
     width: 690px;
-    height: 690px;
+    height: 685px;
     display: block;
     border: 1px solid $light-gray;
     transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
