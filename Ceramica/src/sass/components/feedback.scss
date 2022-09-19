@@ -16,14 +16,15 @@
 }
 
 .form {
-  padding: 75px 154px 104px 112px;
+  width: 736px;
+  height: 705px;
   margin-top: 5px;
   max-width: 735px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: $clear-white;
-  align-items: baseline;
   position: relative;
   &::before{
     content: '';
@@ -38,8 +39,14 @@
     transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
   }
 
+  &__wrapper{
+    padding-right: 42px;
+    padding-bottom: 31px;
+  }
+
   &__header {
     margin-bottom: 18px;
+    padding-bottom: 2px;
   }
 
   &__text {
@@ -56,22 +63,24 @@
   &__input {
     z-index: 10;
     margin-bottom: 17px;
-    padding: 15px 20px ;
+    padding: 15px 18px ;
     border: 1px solid $light-gray;
     &::placeholder{
       font-family: $font-base;
       font-weight: 300;
-      @include font(16px, 22.4px);
+      @include font(16px, 22px);
       color: #98A4AE;
     }
   }
   & textarea{
     resize: none;
     height: 100px;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
+    padding: 12px 18px;
   }
 
   &__btn{
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;

@@ -42,6 +42,7 @@ const projectCarousel = new Swiper(".project-carousel", {
   slidesPerView: 3,
   watchSlidesProgress: true,
   loop: true,
+  allowTouchMove: false,
 });
 
 const projectElements = new Swiper(".project-slider", {

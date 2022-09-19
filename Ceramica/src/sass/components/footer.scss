@@ -31,7 +31,7 @@
 
 .navigation {
   display: grid;
-  grid-template-columns: 0.94fr 0.95fr 1.2fr 0.99fr;
+  grid-template-columns: 0.94fr 0.95fr 1.22fr 0.981fr;
   font-family: $font-base;
   font-weight: 400;
   color: $clear-white;
@@ -45,7 +45,7 @@
   &__header {
     @include font(18px, 25px);
     font-weight: 400;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   &__item {
@@ -74,7 +74,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     >span{
       font-family: $font-base;
       font-weight: 400;

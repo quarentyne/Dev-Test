@@ -20,17 +20,21 @@
     width: 52px;
     height: 52px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:hover>svg{
       fill: $red-active;
     }
     >svg{
       fill: $text-base;
+
     }
   }
 }
 
 .cathword {
-  margin-bottom: 80px;
+  margin-bottom: 81px;
   font-family: $font-base;
   color: $text-base;
   &__text {
@@ -94,7 +98,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 84px;
+    margin-bottom: 82px;
   }
 
   &__nav{
@@ -104,7 +108,7 @@
   }
 
   &__header {
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 
   &__text {

@@ -54,7 +54,9 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 2px;
+    align-items: center;
+    margin-top: 1px;
+    margin-left: 2px;
 
     @media screen and (max-width: 1000px){
       width: 30px;
@@ -67,7 +69,7 @@
     color: $text-base;
     cursor:default;
     margin-left: 2px;
-    margin-top: -2px;
+    margin-top: -5px;
 
     @media screen and (max-width: 1000px) {
       @include font(20px, 24px);
