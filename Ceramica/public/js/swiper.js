@@ -31,7 +31,7 @@ const options = {
     bottom: 212,
   },
   glass: {
-    glassImageSrc: "/icons/MagnifyingGlassPlus.svg",
+    glassImageSrc: "./icons/MagnifyingGlassPlus.svg",
     backgroundColor: 'rgba(249, 249, 250, 0.2)',
   },
   zoom: 2,
