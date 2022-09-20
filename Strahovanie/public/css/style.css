@@ -317,7 +317,7 @@ body {
 
 .footer {
   background-color: #F1F8FE;
-  padding-top: 80px;
+  padding-top: 82px;
   padding-bottom: 50px;
 }
 
@@ -369,7 +369,7 @@ body {
 }
 
 .basement {
-  padding-top: 45px;
+  padding-top: 44px;
 }
 
 .basement_mobile {
@@ -432,6 +432,7 @@ body {
 
 .basement__link > svg {
   margin-right: 8px;
+  margin-top: 3px;
 }
 
 .basement__link > svg:hover {
@@ -439,7 +440,7 @@ body {
 }
 
 .basement__dev {
-  margin-top: 4px;
+  margin-top: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,6 +457,10 @@ body {
   opacity: 0.9;
   color: #2F2F2F;
   margin-right: 10px;
+}
+
+.basement__developer > svg {
+  margin-top: 4px;
 }
 
 .basement__developer > svg:hover {
