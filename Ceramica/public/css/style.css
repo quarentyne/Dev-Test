@@ -313,30 +313,37 @@ body {
   position: relative;
 }
 
-.heart::after {
-  content: "";
-  position: absolute;
-  top: -11px;
-  left: 18px;
+.heart__wrapper {
   width: 15px;
   height: 15px;
   background-color: #AA182C;
   -webkit-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   transform: rotate(15deg);
+  position: absolute;
+  top: -11px;
+  left: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .heart__amount {
-  position: absolute;
   font-family: "Gotham Pro";
   font-weight: 700;
   font-size: 8px;
-  line-height: 1.25;
+  line-height: 1;
   color: #FFFFFF;
-  display: block;
-  top: -7px;
-  left: 22px;
-  z-index: 20;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  margin-top: 1px;
 }
 
 .underheader {
