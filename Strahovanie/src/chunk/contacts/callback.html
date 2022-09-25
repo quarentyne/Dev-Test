@@ -7,11 +7,13 @@
           <li class="feedback__item">
             <ul class="feedback__person">
               <li class="feedback__sender">
-                <span class="feedback__label">Ваше имя</span>
+                <label class="feedback__label" for="name">Ваше имя</label>
                 <input type="text" name="name" />
               </li>
               <li class="feedback__sender">
-                <span class="feedback__label">Ваш номер телефона</span>
+                <label class="feedback__label" for="tel"
+                  >Ваш номер телефона</label
+                >
                 <input
                   type="tel"
                   placeholder="+380 (__) ___ - __ - __"
@@ -21,13 +23,15 @@
             </ul>
           </li>
           <li class="feedback__item">
-            <span class="feedback__label"
-              >Выберите продукт или тему сообщения</span
+            <label class="feedback__label" for="theme"
+              >Выберите продукт или тему сообщения</label
             >
             <input type="text" name="theme" />
           </li>
           <li class="feedback__item">
-            <span class="feedback__label">Текст вашего сообщения</span>
+            <label class="feedback__label" for="text"
+              >Текст вашего сообщения</label
+            >
             <textarea name="text"></textarea>
           </li>
         </ul>
